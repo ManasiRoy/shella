@@ -16,6 +16,12 @@ img {
     vertical-align: middle;
 }
 
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1400px;
+    }
+}
+
 .hrd-main {
     background: $color2;
     padding: 5px 0 0;
