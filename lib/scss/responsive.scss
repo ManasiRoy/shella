@@ -1,0 +1,121 @@
+@media only screen and (max-width: 1169px) {}
+
+@media only screen and (max-width: 1024px) {
+    .footer ul.payment li {
+        padding: 0.2rem;
+    }
+
+    .bannerOutr {
+        padding: 10% 10%;
+
+        h1 {
+            font-size: 30px;
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .mobile-show {
+        display: block;
+    }
+
+    .footer {
+        text-align: center;
+
+        .text-right {
+            text-align: center !important;
+        }
+
+        .ftr-logo {
+            margin-bottom: 30px;
+            display: block;
+        }
+
+        .btn-outline {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .follow-us {
+            padding: 1rem 0.5rem;
+
+            li {
+
+                display: inline-block;
+                vertical-align: middle;
+
+                a {
+                    font-size: 0;
+                    padding: 0 0.5rem;
+
+                    em {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+
+        .dropdown {
+            padding: 1rem 0.5rem 0;
+            border-top: 1px solid rgba($color: #fff, $alpha: 0.1);
+
+            h3 {
+                margin-bottom: 0;
+
+                &:after {
+                    display: inline-block;
+                    right: 15px;
+                    left: auto;
+                    position: absolute;
+                    content: '+';
+                    border: none;
+                }
+            }
+
+            &.show {
+                .dropdown-toggle:after {
+                    border: none;
+                    content: '-';
+                }
+            }
+        }
+
+        .dropdown-menu {
+            display: none;
+        }
+
+        .dropdown-menu.show {
+            display: block;
+            position: static !important;
+            background: transparent;
+            text-align: center;
+            width: 100%;
+            float: none;
+            min-width: inherit;
+            transform: inherit !important;
+            margin-top: 15px;
+            margin-bottom: 15px;
+
+        }
+    }
+
+    .mobile-hidden {
+        display: none;
+    }
+
+    .navbar-toggler:focus {
+        outline: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .hrd-main .upHdr ul {
+        padding: 0;
+        margin: 0;
+        align-items: center;
+    }
+
+    .bottomHdr.sticky {
+        padding: 1rem 0 0;
+    }
+}
