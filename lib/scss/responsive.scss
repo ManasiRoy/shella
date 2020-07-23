@@ -109,10 +109,34 @@
 }
 
 @media only screen and (max-width: 767px) {
-    .hrd-main .upHdr ul {
-        padding: 0;
-        margin: 0;
-        align-items: center;
+    .hrd-main {
+        .upHdr {
+            ul {
+                padding: 0;
+                margin: 0;
+                align-items: center;
+                line-height: 0;
+
+                li {
+                    padding: 0 3px;
+
+                    a {
+                        em {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .same-spacing {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .bag {
+            display: none;
+        }
     }
 
     .bottomHdr.sticky {

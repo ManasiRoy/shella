@@ -320,6 +320,7 @@ img {
     top: 0;
     width: 100%;
     background: $color2;
+    z-index: 999;
 
     .logo-fixed {
         opacity: 1;
@@ -521,8 +522,146 @@ img {
     }
 }
 
+.product-outr {
+    figure {
+        img {
+            width: 100%;
+        }
+    }
 
+    h4 {
+        font-size: 13px;
+    }
 
+    h5 {
+        font-size: 17px;
+    }
+
+    .detailsProduct {
+        p {
+            color: $color1;
+            font-size: 13px;
+            margin: 0 0 .5rem;
+
+            span {
+                color: $color2;
+            }
+
+            a {
+                color: $color5;
+            }
+        }
+    }
+
+    p {
+        color: $color1;
+    }
+
+    .sizeoutr {
+        margin-bottom: 20px;
+
+        ul {
+            margin: 0;
+            padding: 0;
+
+            li {
+                @extend .display-inline-block;
+                margin: 0 2px;
+                min-width: 32px;
+                text-align: center;
+
+                a {
+                    font-size: 13px;
+                    color: $color2;
+                    display: block;
+                    padding: 0.2rem 0.4rem;
+                    border: 1px solid rgba($color: #000000, $alpha: 0.1);
+                    text-decoration: none;
+
+                    &.active,
+                    &:hover {
+                        border: 1px solid $color2;
+                    }
+                }
+            }
+        }
+    }
+
+    .buttonoutr {
+        display: flex;
+        justify-content: space-between;
+
+        .btn-outline {
+            border: 1px solid $color2;
+            color: $color2;
+
+            &:hover {
+                background: $color2;
+                color: white;
+            }
+        }
+
+        button,
+        a {
+            align-self: center;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        .icon-wishlist:before,
+        .icon-compare:before {
+            color: $color2;
+            font-size: 1.2rem;
+        }
+    }
+
+    .owl-carousel {
+        margin-bottom: 1rem;
+
+        figure {
+            margin-bottom: 0;
+        }
+
+        .owl-nav {
+            position: absolute;
+            right: 10px;
+            bottom: 15px;
+
+            button {
+                width: 32px;
+                height: 32px;
+                border-radius: 100%;
+                background: white;
+                display: inline-block;
+                color: $color2;
+                font-size: 2rem;
+                line-height: 1;
+                margin: 0 0 0 5px;
+                outline: none;
+            }
+        }
+    }
+
+    .owl-thumbs {
+        margin-bottom: 1rem;
+
+        .owl-thumb-item {
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            border: none;
+            outline: none;
+            overflow: hidden;
+            margin: 0 0 0 5px;
+
+            &.active {
+                border: 1px solid $color2;
+            }
+        }
+    }
+}
 
 
 
