@@ -117,7 +117,14 @@ img {
           .navbar-menu li:hover ul.main-ul li a:hover {
             background-color: rgba(0, 0, 0, 0.1);
             text-decoration: none; }
-        .navbar-menu li:hover ul.main-ul li.submenu-li a:after {
+        .navbar-menu li:hover ul.main-ul li.submenu-li span {
+          color: #141414;
+          font-size: 13px;
+          display: block;
+          padding: 0.2rem 0.5rem;
+          cursor: pointer; }
+        .navbar-menu li:hover ul.main-ul li.submenu-li a:after,
+        .navbar-menu li:hover ul.main-ul li.submenu-li span:after {
           content: "\e93b";
           font-family: "stella";
           right: 15px;
