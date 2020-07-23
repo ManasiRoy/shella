@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="plugins/menu/css/mmenu.css">
+    <link rel="stylesheet" href="plugins/owlcarousel/css/owl.carousel.min.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&display=swap" rel="stylesheet">
 
@@ -22,72 +23,73 @@
 <body>
 
     <div class="hrd-main">
-        <div class="container-fluid upHdr">
-            <div class="row">
-                <div class="col-4 align-self-center"><a href="index.html" class="logo"><em
-                            class="icon-logo icon-2x"></em></a></div>
-                <div class="col-8 align-self-center text-right">
-                    <ul>
-                        <li><a href="" data-toggle="tooltip" data-placement="bottom" title="Search"><em
-                                    class="icon-search"></em></a></li>
-                        <li><a href="" data-toggle="tooltip" data-placement="bottom" title="Client Service"><em
-                                    class="icon-client-service"></em></a></li>
-                        <li><a href="" data-toggle="tooltip" data-placement="bottom" title="Account"><em
-                                    class="icon-account"></em></a></li>
-                        <li><a href="" data-toggle="tooltip" data-placement="bottom" title="Wishlist"><em
-                                    class="icon-wishlist"></em></a></li>
-                        <li><a href="" data-toggle="tooltip" data-placement="bottom" title="Compare"><em
-                                    class="icon-compare"></em></a></li>
-                        <li><a href=""><em class="icon-bag"></em> <span class="bag">Bag</span><span>(0)</span></a></li>
-                        <li>
-                            <div class="dropdown mobile-hidden">
-                                <button class="dropdown-toggle" type="button" id="dropdownMenuButton"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    US($)
-                                </button>
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">USD - USD Dollar</a>
-                                    <a class="dropdown-item" href="#">EUR - EURO</a>
-                                    <a class="dropdown-item" href="#">GBP - British Pound</a>
+        <div class="upHdr">
+            <div class="container">
+                <div class="row">
+                    <div class="col align-self-center text-right">
+                        <a href="index.html" class="logo"><em class="icon-logo icon-2x"></em></a>
+                        <ul>
+                            <li class="mobile-hidden"><a href="" data-toggle="tooltip" data-placement="bottom"
+                                    title="Search"><em class="icon-search"></em></a></li>
+                            <li><a href="" data-toggle="tooltip" data-placement="bottom" title="Client Service"><em
+                                        class="icon-client-service"></em></a></li>
+                            <li><a href="" data-toggle="tooltip" data-placement="bottom" title="Account"><em
+                                        class="icon-account"></em></a></li>
+                            <li><a href="" data-toggle="tooltip" data-placement="bottom" title="Wishlist"><em
+                                        class="icon-wishlist"></em></a></li>
+                            <li><a href="" data-toggle="tooltip" data-placement="bottom" title="Compare"><em
+                                        class="icon-compare"></em></a></li>
+                            <li><a href=""><em class="icon-bag"></em> <span class="bag">Bag</span><span>(0)</span></a>
+                            </li>
+                            <li class="mobile-hidden">
+                                <div class="dropdown">
+                                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        US($)
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">USD - USD Dollar</a>
+                                        <a class="dropdown-item" href="#">EUR - EURO</a>
+                                        <a class="dropdown-item" href="#">GBP - British Pound</a>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="dropdown mobile-hidden">
-                                <button class="dropdown-toggle" type="button" id="dropdownMenuButton"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    English
-                                </button>
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">English</a>
-                                    <a class="dropdown-item" href="#">Français</a>
-                                    <a class="dropdown-item" href="#">Deutsch</a>
+                            </li>
+                            <li class="mobile-hidden">
+                                <div class="dropdown">
+                                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        English
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">English</a>
+                                        <a class="dropdown-item" href="#">Français</a>
+                                        <a class="dropdown-item" href="#">Deutsch</a>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="bottomHdr" id="myHeader">
-            <div class="container-fluid">
+            <div class="container-fluid position-md-static">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12 position-md-static">
                         <div class="navbar navbar-expand-lg navbar-dark">
-                            <a href="index.html" class="logo-fixed mr-auto"><em class="icon-logo icon-2x"></em></a>
+                            <!-- <a href="index.html" class="logo-fixed mr-auto"><em class="icon-logo icon-2x"></em></a> -->
                             <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false"
                                 aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
+                                <span class="icon-menu-icon"></span> </button>
 
                             <div class="collapse navbar-collapse" id="menu">
                                 <ul class="navbar-menu">
                                     <li class="megamenu">
-                                        <a href="#/" class="p-2 d-block">Layout <em class="icon-arrow"></em></a>
+                                        <span class="p-2 d-block">Layout <em class="icon-arrow"></em></span>
                                         <ul class="main-ul row">
-                                            <li class="col-lg-4"><a href="#">FRONTPAGE LAYOUTS</a>
+                                            <li class="col-lg-4"><span>FRONTPAGE LAYOUTS</span>
                                                 <div class="row">
-                                                    <ul class="col-md-6">
+                                                    <ul class="col-lg-6">
                                                         <li><a href="#">Home V1 <span class="orange-box">HOT</span></a>
                                                         </li>
                                                         <li><a href="#">Home V2</a></li>
@@ -103,7 +105,7 @@
                                                         <li><a href="#">Home V9</a></li>
                                                         <li><a href="#">Home V10</a></li>
                                                     </ul>
-                                                    <ul class="col-md-6">
+                                                    <ul class="col-lg-6">
                                                         <li><a href="#">Home V11</a></li>
                                                         <li><a href="#">Home V12</a></li>
                                                         <li><a href="#">Home V13 </a></li>
@@ -135,9 +137,9 @@
                                         </ul>
                                     </li>
                                     <li class="megamenu">
-                                        <a href="#/" class="p-2 d-block">SHOP<em class="icon-arrow"></em></a>
+                                        <span class="p-2 d-block">SHOP<em class="icon-arrow"></em></span>
                                         <ul class="main-ul row">
-                                            <li class="col-lg-2"><a href="#">COLLECTION LAYOUTS</a>
+                                            <li class="col-lg-2"><span>COLLECTION LAYOUTS</span>
                                                 <ul>
                                                     <li><a href="#">List Collection V1</a></li>
                                                     <li><a href="#">List Collections V2</a></li>
@@ -155,7 +157,7 @@
                                                     <li><a href="#">Catalog Mode</a></li>
                                                 </ul>
                                             </li>
-                                            <li class="col-lg-2"><a href="#">SINGLE PRODUCT LAYOUTS</a>
+                                            <li class="col-lg-2"><span>SINGLE PRODUCT LAYOUTS</span>
                                                 <ul>
                                                     <li><a href="#">Product V1 — Classic</a></li>
                                                     <li><a href="#">Product V2 — Thumbs List</a></li>
@@ -166,7 +168,7 @@
                                                     <li><a href="#">Product V1 — With Column</a></li>
                                                 </ul>
                                             </li>
-                                            <li class="col-lg-2"><a href="#">USER ACCOUNT PAGES</a>
+                                            <li class="col-lg-2"><span>USER ACCOUNT PAGES</span>
                                                 <ul>
                                                     <li><a href="#">Login</a></li>
                                                     <li><a href="#">Register</a></li>
@@ -177,7 +179,7 @@
                                                     <li><a href="#">Search</a></li>
                                                 </ul>
                                             </li>
-                                            <li class="col-lg-4"><a href="#">FEATURED PRODUCTS</a>
+                                            <li class="col-lg-4"><span>FEATURED PRODUCTS</span>
                                                 <div class="row">
                                                     <a class="col-md-6 featuredPro" href="#">
                                                         <figure>
@@ -195,34 +197,34 @@
                                                     </a>
                                                 </div>
                                             </li>
-                                            <li class="col-lg-2"><a href="#">Top Brands</a>
+                                            <li class="col-lg-2"><span>Top Brands</span>
                                                 <div class="row brand-outr text-center">
-                                                    <div class="col-md-6 mb-2" href="#">
+                                                    <div class="col-md-6 mb-2">
                                                         <figure class="brand">
                                                             <img src="lib/images/brand1_62x.png" alt="img">
                                                         </figure>
                                                     </div>
-                                                    <div class="col-md-6 mb-2" href="#">
+                                                    <div class="col-md-6 mb-2">
                                                         <figure class="brand">
                                                             <img src="lib/images/brand2_62x.png" alt="img">
                                                         </figure>
                                                     </div>
-                                                    <div class="col-md-6 mb-2" href="#">
+                                                    <div class="col-md-6 mb-2">
                                                         <figure class="brand">
                                                             <img src="lib/images/brand3_62x.png" alt="img">
                                                         </figure>
                                                     </div>
-                                                    <div class="col-md-6 mb-2" href="#">
+                                                    <div class="col-md-6 mb-2">
                                                         <figure class="brand">
                                                             <img src="lib/images/brand4_62x.png" alt="img">
                                                         </figure>
                                                     </div>
-                                                    <div class="col-md-6 mb-2" href="#">
+                                                    <div class="col-md-6 mb-2">
                                                         <figure class="brand">
                                                             <img src="lib/images/brand5_62x.png" alt="img">
                                                         </figure>
                                                     </div>
-                                                    <div class="col-md-6 mb-2" href="#">
+                                                    <div class="col-md-6 mb-2">
                                                         <figure class="brand">
                                                             <img src="lib/images/brand6_62x.png" alt="img">
                                                         </figure>
@@ -233,14 +235,14 @@
                                     </li>
 
                                     <li>
-                                        <a href="#/" class="p-2 d-block">Blog<em class="icon-arrow"></em></a>
+                                        <span class="p-2 d-block">Blog<em class="icon-arrow"></em></span>
                                         <ul class="main-ul">
                                             <li><a href="#/">Blog V1 — Classic</a></li>
                                             <li><a href="#/">Blog V2 — Grid</a></li>
                                             <li><a href="#/">Blog V3 — Masonry</a></li>
                                             <li><a href="#">Blog V4 — With Sidebar</a></li>
                                             <li class="submenu-li">
-                                                <a href="#">Single Post</a>
+                                                <span>Single Post</span>
                                                 <ul class="submenu">
                                                     <li><a href="#">Default</a></li>
                                                     <li><a href="#">With Video</a></li>
@@ -250,7 +252,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="#/" class="p-2 d-block">Gallery<em class="icon-arrow"></em></a>
+                                        <span class="p-2 d-block">Gallery<em class="icon-arrow"></em></span>
                                         <ul class="main-ul">
                                             <li><a href="#/">Gallery V1 — Masonry (3 Col)</a></li>
                                             <li><a href="#/">Gallery V2 — Masonry (4 Col)</a></li>
@@ -259,7 +261,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="#/" class="p-2 d-block">Pages<em class="icon-arrow"></em></a>
+                                        <span class="p-2 d-block">Pages<em class="icon-arrow"></em></span>
                                         <ul class="main-ul">
                                             <li><a href="#/">About Us</a></li>
                                             <li><a href="#/">Customer Service</a></li>
@@ -277,10 +279,10 @@
                                     </li>
 
                                     <li class="megamenu">
-                                        <a href="#/" class="p-2 d-block">Womens<em class="icon-arrow"></em></a>
+                                        <span class="p-2 d-block">Womens<em class="icon-arrow"></em></span>
                                         <ul class="main-ul row">
                                             <li class="col-lg-2">
-                                                <a href="#">CLOTHING</a>
+                                                <span>CLOTHING</span>
                                                 <ul>
                                                     <li><a href="#">Coats</a></li>
                                                     <li><a href="#">Jackets</a></li>
@@ -298,7 +300,7 @@
                                                 </ul>
                                             </li>
                                             <li class="col-lg-2">
-                                                <a href="#">SHOES</a>
+                                                <span>SHOES</span>
                                                 <ul>
                                                     <li><a href="#">Trainers</a></li>
                                                     <li><a href="#">Boots & Ankle Boots</a></li>
@@ -309,7 +311,7 @@
                                                 </ul>
                                             </li>
                                             <li class="col-lg-2">
-                                                <a href="#">ACCESSORIES</a>
+                                                <span>ACCESSORIES</span>
                                                 <ul>
                                                     <li><a href="#">Bags</a></li>
                                                     <li><a href="#">Backpacks</a></li>
@@ -324,10 +326,10 @@
                                                     <li><a href="#">Socks</a></li>
                                                 </ul>
                                             </li>
-                                            <li class="col-md-6">
-                                                <a href="#" class="d-block d-sm-none">Featured</a>
+                                            <li class="col-lg-6">
+                                                <span class="d-block d-sm-none">Featured</span>
                                                 <div class="row">
-                                                    <a class="featuredPro text-center covered col-md-6 mb-4" href="#">
+                                                    <a class="featuredPro text-center covered col-lg-6 mb-4" href="#">
                                                         <figure>
                                                             <img src="lib/images/hdr5.jpg" alt="img">
                                                         </figure>
@@ -338,7 +340,7 @@
                                                         </figcaption>
                                                     </a>
 
-                                                    <a class="featuredPro text-center covered col-md-6 mb-4" href="#">
+                                                    <a class="featuredPro text-center covered col-lg-6 mb-4" href="#">
                                                         <figure>
                                                             <img src="lib/images/hdr6.jpg" alt="img">
                                                         </figure>
@@ -347,7 +349,7 @@
                                                             <h6 class="price">Get up to 20% off </h6>
                                                         </figcaption>
                                                     </a>
-                                                    <a class="featuredPro text-center covered col-md-6 mb-4" href="#">
+                                                    <a class="featuredPro text-center covered col-lg-6 mb-4" href="#">
                                                         <figure>
                                                             <img src="lib/images/hdr7.jpg" alt="img">
                                                         </figure>
@@ -356,7 +358,7 @@
                                                             <h6 class="price">Popular Items </h6>
                                                         </figcaption>
                                                     </a>
-                                                    <a class="featuredPro text-center covered col-md-6 mb-4" href="#">
+                                                    <a class="featuredPro text-center covered col-lg-6 mb-4" href="#">
                                                         <figure>
                                                             <img src="lib/images/hdr8.jpg" alt="img">
                                                         </figure>
@@ -370,7 +372,7 @@
                                         </ul>
                                     </li>
                                     <li class="megamenu">
-                                        <a href="#/" class="p-2 d-block">Mens<em class="icon-arrow"></em></a>
+                                        <span class="p-2 d-block">Mens<em class="icon-arrow"></em></span>
                                         <ul class="main-ul row">
                                             <li class="col-lg-3">
                                                 <a class="featuredPro" href="#">
@@ -382,7 +384,7 @@
                                                 </a>
                                             </li>
                                             <li class="col-lg-2">
-                                                <a href="#/">CLOTHING</a>
+                                                <span>CLOTHING</span>
                                                 <figure>
                                                     <img src="lib/images/hdr10.jpg" alt="img">
                                                 </figure>
@@ -399,7 +401,7 @@
                                                     <li><a href="#">Shorts</a></li>
                                                 </ul>
                                             </li>
-                                            <li class="col-lg-2"><a href="#/">SHOES</a>
+                                            <li class="col-lg-2"><span>SHOES</span>
                                                 <figure>
                                                     <img src="lib/images/hdr11.jpg" alt="img">
                                                 </figure>
@@ -410,7 +412,7 @@
                                                     <li><a href="#">Sandals</a></li>
                                                 </ul>
                                             </li>
-                                            <li class="col-lg-2"><a href="#/">ACCESSORIES</a>
+                                            <li class="col-lg-2"><span>ACCESSORIES</span>
                                                 <figure>
                                                     <img src="lib/images/hdr12.jpg" alt="img">
                                                 </figure>
@@ -460,114 +462,126 @@
             </div>
         </div>
     </div>
-    <section class="bannerOutr" style="background-image: url(lib/images/banner1.jpg);">
-        <div class="container-fluid">
+    <main class="main">
+        <div class="owl-carousel owl-theme bannerSlider" id="bannerSlider">
+            <div class="item">
+                <figure>
+                    <img src="lib/images/banner.jpg" alt="" />
+                </figure>
+                <article>
+                    <h2>TAKE YOUR FIT TO
+                        THE NE(X)T LEVEL
+                    </h2>
+                    <p>Your favorite jean fits and shorts just got the ultimate upgrade</p>
+                </article>
+            </div>
+            <div class="item">
+                <figure>
+                    <img src="lib/images/banner2.jpg" alt="" />
+                </figure>
+                <article class="textblack">
+                    <h2>FINAL CLEARANCE</h2>
+                    <p>Take 20% Off ‘Sale Must-Haves'</p>
+                </article>
+            </div>
+            <div class="item">
+                <div class="video-responsive">
+                    <video loop preload muted autoplay>
+                        <source src="lib/images/banner.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <article>
+                    <h2>THIS JUST IN</h2>
+                    <p>Hundreds Of New Spring
+                        Arrivals, Featuring On-Trend Matching Sets For Her And
+                        Breezy, Spring-Infused Prints For Him.</p>
+                </article>
+            </div>
+        </div>
+
+        <section class="container same-spacing featured-banner">
             <div class="row">
-                <div class="col-md-12 text-center">
-                    <article>
-                        <h2>IN STORES & ONLINE NOW</h2>
+                <div class="col-lg-6 mb-4">
+                    <div class="featuredPro text-center" href="#">
+                        <figure>
+                            <img src="lib/images/90slove.jpg" alt="img">
+                        </figure>
+                        <span>'90S LOVE</span>
+                        <h6 class="price">The nostalgia-inducing classic is BACK – and in a big way. The more
+                            distressed,
+                            the better.
+                        </h6>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-3">
+                    <div class="featuredPro text-center" href="#">
+                        <figure>
+                            <img src="lib/images/off-all.jpg" alt="img">
+                        </figure>
+                        <span>40% OFF ALL CLOTHING</span>
+                        <h6 class="price">
+                            Just in time for spring: the easy, wear-anywhere vibes of your favorite joggers, now in
+                            shorts
+                            form
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                        <h1>THIS JUST IN</h1>
-
-                        <p>Hundreds of new spring arrivals, featuring on-trend matching sets for her and breezy,
-                            spring-infused prints for him.</p>
-
-                    </article>
-                    <div class="btngroup">
-                        <div class="mb-3">
-                            <button class="btn btn-outline">Women's New arrivals</button>
-                        </div>
-                        <div class="mb-3">
-                            <button class="btn btn-outline">Men's New arrivals</button>
+        <section class="bannerOutr" style="background-image: url(lib/images/banner-online.jpg);">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <article>
+                            <h2>IN STORES & ONLINE NOW</h2>
+                            <h1>TAKE YOUR FIT TO
+                                THE NE(X)T LEVEL</h1>
+                            <p>Your favorite jean fits and shorts just got the ultimate upgrade, thanks to our
+                                stretchiest,
+                                most comfortable denim</p>
+                        </article>
+                        <div class="btngroup">
+                            <button class="btn btn-outline m-2">Shop Women's</button>
+                            <button class="btn btn-outline m-2">Shop Men's</button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="container same-spacing featured-banner">
-        <div class="row">
-            <div class="col-md-6 mb-3">
-                <div class="featuredPro text-center" href="#">
-                    <figure>
-                        <img src="lib/images/90slove.jpg" alt="img">
-                    </figure>
-                    <span>'90S LOVE</span>
-                    <h6 class="price">The nostalgia-inducing classic is BACK – and in a big way. The more distressed,
-                        the better.
-                    </h6>
-                </div>
-            </div>
-            <div class="col-md-6 mb-3">
-                <div class="featuredPro text-center" href="#">
-                    <figure>
-                        <img src="lib/images/off-all.jpg" alt="img">
-                    </figure>
-                    <span>40% OFF ALL CLOTHING</span>
-                    <h6 class="price">
-                        Just in time for spring: the easy, wear-anywhere vibes of your favorite joggers, now in shorts
-                        form
-                    </h6>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="bannerOutr" style="background-image: url(lib/images/banner2.jpg);">
-        <div class="container-fluid">
+        <section class="container same-spacing featured-banner">
             <div class="row">
-                <div class="col-md-12 text-center">
-                    <article>
-                        <h2>IN STORES & ONLINE NOW</h2>
-                        <h1>TAKE YOUR FIT TO
-                            THE NE(X)T LEVEL</h1>
-                        <p>Your favorite jean fits and shorts just got the ultimate upgrade, thanks to our stretchiest,
-                            most comfortable denim</p>
-                    </article>
-                    <div class="btngroup">
-                        <button class="btn btn-outline m-2">Shop Women's</button>
-                        <button class="btn btn-outline m-2">Shop Men's</button>
+                <div class="col-lg-6 mb-3">
+                    <div class="featuredPro text-center" href="#">
+                        <figure>
+                            <img src="lib/images/all-shoes.jpg" alt="img">
+                        </figure>
+                        <span>40% OFF ALL SHOES</span>
+                        <h6 class="price">Limited Time: Online Only!
+                        </h6>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-3">
+                    <div class="featuredPro text-center" href="#">
+                        <figure>
+                            <img src="lib/images/vacation.jpg" alt="img">
+                        </figure>
+                        <span>THE VACATION SHOP</span>
+                        <h6 class="price">
+                            Discover the ultimate packing list
+                        </h6>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="container same-spacing featured-banner">
-        <div class="row">
-            <div class="col-md-6 mb-3">
-                <div class="featuredPro text-center" href="#">
-                    <figure>
-                        <img src="lib/images/all-shoes.jpg" alt="img">
-                    </figure>
-                    <span>40% OFF ALL SHOES</span>
-                    <h6 class="price">Limited Time: Online Only!
-                    </h6>
-                </div>
-            </div>
-            <div class="col-md-6 mb-3">
-                <div class="featuredPro text-center" href="#">
-                    <figure>
-                        <img src="lib/images/vacation.jpg" alt="img">
-                    </figure>
-                    <span>THE VACATION SHOP</span>
-                    <h6 class="price">
-                        Discover the ultimate packing list
-                    </h6>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="shipping-information">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="row iconshipOutr">
-                        <div class="col-2">
+        <section class="shipping-information">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 mb-3">
+                        <div class="iconshipOutr">
                             <em class="icon-shipping icon-2x"></em>
-                        </div>
-                        <div class="col-10 align-self-center pl-lg-0">
                             <p>
                                 <span>Free Shipping.</span>
                                 All orders of $49 or more of eligible items across any product category
@@ -575,26 +589,18 @@
                             </p>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="row iconshipOutr">
-                        <div class="col-2">
+                    <div class="col-lg-4 mb-3">
+                        <div class="iconshipOutr">
                             <em class="icon-payment icon-2x"></em>
-                        </div>
-                        <div class="col-10 align-self-center pl-lg-0">
                             <p>
                                 <span>Payment Methods.</span>
                                 Credit Card: Visa, MasterCard, Maestro, American Express.
                             </p>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="row iconshipOutr">
-                        <div class="col-2">
+                    <div class="col-lg-4 mb-3">
+                        <div class="iconshipOutr">
                             <em class="icon-return icon-2x"></em>
-                        </div>
-                        <div class="col-10 align-self-center pl-lg-0">
                             <p>
                                 <span>Returns and Refunds.</span>
                                 You can return any item purchased on Shella within 20 days of the delivery date.
@@ -603,10 +609,9 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <footer class="footer">
+        </section>
+    </main>
+    <footer class="footer fixed-bottom">
         <div class="container">
             <div class="row mb-md-3">
                 <div class="col-lg-6">
@@ -626,7 +631,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-2 mb-md-3 dropdown">
+                <div class="col-lg-2 mb-lg-3 dropdown">
                     <h3 class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false">SHOP</h3>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -640,7 +645,7 @@
                         <li><a href="#">Lookbook</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-2 mb-md-3 dropdown">
+                <div class="col-lg-2 mb-lg-3 dropdown">
                     <h3 class="dropdown-toggle" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false">INFORMATION</h3>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
@@ -654,7 +659,7 @@
                         <li><a href="#">Documentation</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-2 mb-md-3 dropdown">
+                <div class="col-lg-2 mb-lg-3 dropdown">
                     <h3 class="dropdown-toggle" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false">ORDER</h3>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
@@ -664,7 +669,7 @@
                         <li><a href="#">Cookie Policy</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-4 mb-md-3 dropdown">
+                <div class="col-lg-4 mb-lg-3 dropdown">
                     <h3 class="dropdown-toggle" id="dropdownMenuButton4" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false">HERE TO HELP</h3>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
@@ -691,7 +696,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-2 mb-md-3 follow-us">
+                <div class="col-lg-2 mb-lg-3 follow-us mobile-hidden">
                     <h3>FOLLOW US</h3>
                     <ul>
                         <li><a href="#"> <em class="icon-facebook"></em> Facebook</a></li>
@@ -709,14 +714,28 @@
         <div class="bottom-footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-2 pr-0">
+                    <div class="col-lg-2 pr-md-0">
                         <a href="index.html" class="ftr-logo">
                             <em class="icon-2x icon-logo"></em>
                         </a>
                     </div>
-                    <div class="col-lg-4 pl-0">
-                        <p>shella-demo
-                            &copy; 2019 Shella Fashion Store HTML. All Rights Reserved. Ecommerce Software by HTML.</p>
+                    <div class="col-lg-4 pl-md-0">
+                        <p>
+                            shella-demo
+                            &copy; 2019 Shella Fashion Store HTML. All Rights Reserved. Ecommerce Software by HTML.
+                        </p>
+                        <div class="follow-show follow-us">
+                            <ul>
+                                <li><a href="#"> <em class="icon-facebook"></em> Facebook</a></li>
+                                <li><a href="#"> <em class="icon-twitter"></em> Twitter</a></li>
+                                <li><a href="#"> <em class="icon-google"></em> Google</a></li>
+                                <li><a href="#"> <em class="icon-insta"></em> Instagram</a></li>
+                                <li><a href="#"> <em class="icon-pint"></em> Pinterest</a></li>
+                                <li><a href="#"> <em class="icon-youTube"></em> Youtube</a></li>
+                                <li><a href="#"> <em class="icon-behance"></em> Behance</a></li>
+                                <li><a href="#"> <em class="icon-skype"></em> Skype</a></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="col-lg-6 text-right">
                         <ul class="payment">
@@ -766,20 +785,6 @@
             </div>
         </div>
     </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     <!-- Optional JavaScript -->

@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'stella';
-  src:  url('fonts/stella.eot?ocpj53');
-  src:  url('fonts/stella.eot?ocpj53#iefix') format('embedded-opentype'),
-    url('fonts/stella.ttf?ocpj53') format('truetype'),
-    url('fonts/stella.woff?ocpj53') format('woff'),
-    url('fonts/stella.svg?ocpj53#stella') format('svg');
+  src:  url('fonts/stella.eot?lemxqj');
+  src:  url('fonts/stella.eot?lemxqj#iefix') format('embedded-opentype'),
+    url('fonts/stella.ttf?lemxqj') format('truetype'),
+    url('fonts/stella.woff?lemxqj') format('woff'),
+    url('fonts/stella.svg?lemxqj#stella') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,35 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-leftarrow:before {
+  content: "\e943";
+}
+.icon-menu-icon:before {
+  content: "\e942";
+  color: #fff;
+}
+.icon-grid2:before {
+  content: "\e93c";
+  color: #bdbdbd;
+}
+.icon-grid3:before {
+  content: "\e93d";
+  color: #bdbdbd;
+}
+.icon-grid4:before {
+  content: "\e93e";
+}
+.icon-gridone:before {
+  content: "\e93f";
+  color: #bdbdbd;
+}
+.icon-settings:before {
+  content: "\e940";
+  color: #fff;
+}
+.icon-watch:before {
+  content: "\e941";
+}
 .icon-right-arrow:before {
   content: "\e93b";
 }

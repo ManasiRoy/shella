@@ -18,13 +18,14 @@ img {
 
 @media (min-width: 1200px) {
     .container {
-        max-width: 1400px;
+        max-width: 1200px;
     }
 }
 
 .hrd-main {
     background: $color2;
     padding: 5px 0 0;
+    z-index: 999;
 
     .upHdr {
         border-bottom: 1px solid $color1;
@@ -90,8 +91,18 @@ img {
 }
 
 @media (min-width: 992px) {
+    .position-md-static {
+        position: static;
+    }
+
+    .bottomHdr {
+        position: relative;
+        z-index: 999;
+    }
+
     .navbar {
         padding: 0;
+        position: static;
     }
 
     .navbar-menu {
@@ -107,6 +118,7 @@ img {
             list-style-type: none;
             position: relative;
 
+            span,
             a {
                 color: white;
                 font-size: 13px;
@@ -198,6 +210,11 @@ img {
                     .main-ul {
                         display: flex;
                         min-width: inherit;
+                        min-width: inherit;
+                        max-width: 1200px;
+                        margin: auto;
+                        right: 0;
+
 
                         li {
                             a {
@@ -315,6 +332,16 @@ img {
     opacity: 0;
 }
 
+.logo {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    width: 70px;
+}
+
 .sticky {
     position: fixed;
     top: 0;
@@ -401,7 +428,15 @@ img {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
 
     .iconshipOutr {
+        em {
+            float: left;
+            margin-right: 20px;
+        }
+
         p {
+            overflow: hidden;
+            margin-bottom: 0;
+
             span {
                 color: $color2;
             }
@@ -411,9 +446,15 @@ img {
     }
 }
 
+.main {
+    background-color: white;
+    z-index: 9;
+}
+
 .footer {
     background: $color2;
     padding: 60px 0 0;
+    z-index: -1;
 
     h3 {
         font-size: 15px;
@@ -663,9 +704,147 @@ img {
     }
 }
 
+.gridview {
+    ul {
+        padding: 0;
+        margin: 0;
+
+        li {
+            @extend .display-inline-block;
+            font-size: 1.5rem;
+            color: $color1;
+            cursor: pointer;
+        }
+    }
+}
+
+.bannerSlider {
+    &.owl-carousel {
+        .item {
+            position: relative;
+
+            figure {
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                    min-height: 600px;
+                }
+            }
+
+            .video-responsive {
+                position: relative;
+
+                video {
+                    width: 100% !important;
+                    height: 100%;
+                    transform: scaleY(0.7);
+                    transform-origin: left top;
+                    margin-bottom: -17.3%;
+                }
+
+            }
 
 
 
+            article {
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+                top: 50%;
+                transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
+                text-align: center;
+                padding: 0 30%;
+
+                h2 {
+                    color: white;
+                    font-size: 44px;
+                }
+
+                p {
+                    color: white;
+                    font-size: 18px;
+                }
+
+                &.textblack {
+
+                    h2,
+                    p {
+                        color: $color2;
+                    }
+                }
+            }
+        }
+
+        .owl-nav {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: 50%;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+
+            .owl-prev,
+            .owl-next {
+                font-size: 2.5em;
+                border: none;
+                outline: none;
+                line-height: 1;
+
+                &:focus {
+                    border: none;
+                    outline: none;
+                }
+            }
+
+            .owl-prev {
+                left: 2%;
+                position: absolute;
+
+            }
+
+            .owl-next {
+                right: 2%;
+                position: absolute;
+            }
+        }
+
+        .owl-dots {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            bottom: 8%;
+            text-align: center;
+
+            .owl-dot {
+                width: 7px;
+                height: 7px;
+                border-radius: 100%;
+                background: $color2;
+                margin: 0 10px;
+                @extend .display-inline-block;
+
+
+                &.active {
+                    width: 10px;
+                    height: 10px;
+                }
+
+                &:hover,
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+
+.follow-show {
+    display: none;
+}
 
 
 

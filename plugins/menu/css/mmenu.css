@@ -189,6 +189,7 @@
     top: 0;
     bottom: 0;
     background: #f3f3f3;
+    margin: auto;
 }
 
 .mm-panel__content {
@@ -611,7 +612,7 @@
 .mm-menu_offcanvas {
     position: fixed;
     right: auto;
-    z-index: 999;
+    z-index: 9999;
     background: #fff;
 }
 
