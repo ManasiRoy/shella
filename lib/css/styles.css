@@ -479,11 +479,12 @@ img {
       padding: 0 3px; }
       .hrd-main .upHdr ul li a em {
         font-size: 1rem; }
-  .hrd-main .same-spacing {
-    padding-top: 40px;
-    padding-bottom: 40px; }
   .hrd-main .bag {
     display: none; }
 
   .bottomHdr.sticky {
-    padding: 1rem 0 0; } }
+    padding: 1rem 0 0; }
+
+  .same-spacing {
+    padding-top: 40px;
+    padding-bottom: 40px; } }
