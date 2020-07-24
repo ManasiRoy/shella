@@ -555,7 +555,10 @@ img {
     display: block; }
 
   .footer {
-    text-align: center; }
+    text-align: center;
+    overflow-y: auto;
+    height: 95%;
+    padding-top: 40px; }
     .footer .text-right {
       text-align: center !important; }
     .footer .ftr-logo {
@@ -575,7 +578,7 @@ img {
           .footer .follow-us li a em {
             font-size: 1rem; }
     .footer .payment {
-      padding: 1.5rem 0 0;
+      padding: 1.5rem 0;
       border-top: rgba(255, 255, 255, 0.1) 1px solid; }
       .footer .payment li a {
         padding-bottom: 0; }
