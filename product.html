@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="plugins/menu/css/mmenu.css">
     <link rel="stylesheet" href="plugins/owlcarousel/css/owl.carousel.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap-slider.css">
     <link href="lib/icons/style.css" rel="stylesheet">
     <link rel="stylesheet" href="lib/css/styles.css">
 
@@ -20,72 +21,73 @@
 <body>
 
     <div class="hrd-main">
-        <div class="container-fluid upHdr">
-            <div class="row">
-                <div class="col-4 align-self-center"><a href="index.html" class="logo"><em
-                            class="icon-logo icon-2x"></em></a></div>
-                <div class="col-8 align-self-center text-right">
-                    <ul>
-                        <li><a href="" data-toggle="tooltip" data-placement="bottom" title="Search"><em
-                                    class="icon-search"></em></a></li>
-                        <li><a href="" data-toggle="tooltip" data-placement="bottom" title="Client Service"><em
-                                    class="icon-client-service"></em></a></li>
-                        <li><a href="" data-toggle="tooltip" data-placement="bottom" title="Account"><em
-                                    class="icon-account"></em></a></li>
-                        <li><a href="" data-toggle="tooltip" data-placement="bottom" title="Wishlist"><em
-                                    class="icon-wishlist"></em></a></li>
-                        <li><a href="" data-toggle="tooltip" data-placement="bottom" title="Compare"><em
-                                    class="icon-compare"></em></a></li>
-                        <li><a href=""><em class="icon-bag"></em> <span>Bag</span><span>(0)</span></a></li>
-                        <li>
-                            <div class="dropdown mobile-hidden">
-                                <button class="dropdown-toggle" type="button" id="dropdownMenuButton"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    US($)
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">USD - USD Dollar</a>
-                                    <a class="dropdown-item" href="#">EUR - EURO</a>
-                                    <a class="dropdown-item" href="#">GBP - British Pound</a>
+        <div class="upHdr">
+            <div class="container">
+                <div class="row">
+                    <div class="col align-self-center text-right logoarea">
+                        <a href="index.html" class="logo"><em class="icon-logo icon-2x"></em></a>
+                        <ul>
+                            <li class="mobile-hidden"><a href="" data-toggle="tooltip" data-placement="bottom"
+                                    title="Search"><em class="icon-search"></em></a></li>
+                            <li><a href="" data-toggle="tooltip" data-placement="bottom" title="Client Service"><em
+                                        class="icon-client-service"></em></a></li>
+                            <li><a href="" data-toggle="tooltip" data-placement="bottom" title="Account"><em
+                                        class="icon-account"></em></a></li>
+                            <li><a href="" data-toggle="tooltip" data-placement="bottom" title="Wishlist"><em
+                                        class="icon-wishlist"></em></a></li>
+                            <li><a href="" data-toggle="tooltip" data-placement="bottom" title="Compare"><em
+                                        class="icon-compare"></em></a></li>
+                            <li><a href=""><em class="icon-bag"></em> <span class="bag">Bag</span><span>(0)</span></a>
+                            </li>
+                            <li class="mobile-hidden onhover">
+                                <div class="dropdown">
+                                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        US($)
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">USD - USD Dollar</a>
+                                        <a class="dropdown-item" href="#">EUR - EURO</a>
+                                        <a class="dropdown-item" href="#">GBP - British Pound</a>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="dropdown mobile-hidden">
-                                <button class="dropdown-toggle" type="button" id="dropdownMenuButton"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    English
-                                </button>
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">English</a>
-                                    <a class="dropdown-item" href="#">Français</a>
-                                    <a class="dropdown-item" href="#">Deutsch</a>
+                            </li>
+                            <li class="mobile-hidden onhover">
+                                <div class="dropdown">
+                                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        English
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">English</a>
+                                        <a class="dropdown-item" href="#">Français</a>
+                                        <a class="dropdown-item" href="#">Deutsch</a>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="bottomHdr" id="myHeader">
-            <div class="container-fluid">
+            <div class="container-fluid position-md-static">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12 position-md-static">
                         <div class="navbar navbar-expand-lg navbar-dark">
-                            <a href="index.html" class="logo-fixed mr-auto"><em class="icon-logo icon-2x"></em></a>
+                            <!-- <a href="index.html" class="logo-fixed mr-auto"><em class="icon-logo icon-2x"></em></a> -->
                             <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false"
                                 aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
+                                <span class="icon-menu-icon"></span> </button>
 
                             <div class="collapse navbar-collapse" id="menu">
                                 <ul class="navbar-menu">
                                     <li class="megamenu">
-                                        <a href="#/" class="p-2 d-block">Layout <em class="icon-arrow"></em></a>
+                                        <span class="p-2 d-block">Layout <em class="icon-arrow"></em></span>
                                         <ul class="main-ul row">
-                                            <li class="col-lg-4"><a href="#">FRONTPAGE LAYOUTS</a>
+                                            <li class="col-lg-4"><span>FRONTPAGE LAYOUTS</span>
                                                 <div class="row">
-                                                    <ul class="col-md-6">
+                                                    <ul class="col-lg-6">
                                                         <li><a href="#">Home V1 <span class="orange-box">HOT</span></a>
                                                         </li>
                                                         <li><a href="#">Home V2</a></li>
@@ -101,7 +103,7 @@
                                                         <li><a href="#">Home V9</a></li>
                                                         <li><a href="#">Home V10</a></li>
                                                     </ul>
-                                                    <ul class="col-md-6">
+                                                    <ul class="col-lg-6">
                                                         <li><a href="#">Home V11</a></li>
                                                         <li><a href="#">Home V12</a></li>
                                                         <li><a href="#">Home V13 </a></li>
@@ -133,9 +135,9 @@
                                         </ul>
                                     </li>
                                     <li class="megamenu">
-                                        <a href="#/" class="p-2 d-block">SHOP<em class="icon-arrow"></em></a>
+                                        <span class="p-2 d-block">SHOP<em class="icon-arrow"></em></span>
                                         <ul class="main-ul row">
-                                            <li class="col-lg-2"><a href="#">COLLECTION LAYOUTS</a>
+                                            <li class="col-lg-2"><span>COLLECTION LAYOUTS</span>
                                                 <ul>
                                                     <li><a href="#">List Collection V1</a></li>
                                                     <li><a href="#">List Collections V2</a></li>
@@ -153,7 +155,7 @@
                                                     <li><a href="#">Catalog Mode</a></li>
                                                 </ul>
                                             </li>
-                                            <li class="col-lg-2"><a href="#">SINGLE PRODUCT LAYOUTS</a>
+                                            <li class="col-lg-2"><span>SINGLE PRODUCT LAYOUTS</span>
                                                 <ul>
                                                     <li><a href="#">Product V1 — Classic</a></li>
                                                     <li><a href="#">Product V2 — Thumbs List</a></li>
@@ -164,7 +166,7 @@
                                                     <li><a href="#">Product V1 — With Column</a></li>
                                                 </ul>
                                             </li>
-                                            <li class="col-lg-2"><a href="#">USER ACCOUNT PAGES</a>
+                                            <li class="col-lg-2"><span>USER ACCOUNT PAGES</span>
                                                 <ul>
                                                     <li><a href="#">Login</a></li>
                                                     <li><a href="#">Register</a></li>
@@ -175,7 +177,7 @@
                                                     <li><a href="#">Search</a></li>
                                                 </ul>
                                             </li>
-                                            <li class="col-lg-4"><a href="#">FEATURED PRODUCTS</a>
+                                            <li class="col-lg-4"><span>FEATURED PRODUCTS</span>
                                                 <div class="row">
                                                     <a class="col-md-6 featuredPro" href="#">
                                                         <figure>
@@ -193,34 +195,34 @@
                                                     </a>
                                                 </div>
                                             </li>
-                                            <li class="col-lg-2"><a href="#">Top Brands</a>
+                                            <li class="col-lg-2"><span>Top Brands</span>
                                                 <div class="row brand-outr text-center">
-                                                    <div class="col-md-6 mb-2" href="#">
+                                                    <div class="col-md-6 mb-2">
                                                         <figure class="brand">
                                                             <img src="lib/images/brand1_62x.png" alt="img">
                                                         </figure>
                                                     </div>
-                                                    <div class="col-md-6 mb-2" href="#">
+                                                    <div class="col-md-6 mb-2">
                                                         <figure class="brand">
                                                             <img src="lib/images/brand2_62x.png" alt="img">
                                                         </figure>
                                                     </div>
-                                                    <div class="col-md-6 mb-2" href="#">
+                                                    <div class="col-md-6 mb-2">
                                                         <figure class="brand">
                                                             <img src="lib/images/brand3_62x.png" alt="img">
                                                         </figure>
                                                     </div>
-                                                    <div class="col-md-6 mb-2" href="#">
+                                                    <div class="col-md-6 mb-2">
                                                         <figure class="brand">
                                                             <img src="lib/images/brand4_62x.png" alt="img">
                                                         </figure>
                                                     </div>
-                                                    <div class="col-md-6 mb-2" href="#">
+                                                    <div class="col-md-6 mb-2">
                                                         <figure class="brand">
                                                             <img src="lib/images/brand5_62x.png" alt="img">
                                                         </figure>
                                                     </div>
-                                                    <div class="col-md-6 mb-2" href="#">
+                                                    <div class="col-md-6 mb-2">
                                                         <figure class="brand">
                                                             <img src="lib/images/brand6_62x.png" alt="img">
                                                         </figure>
@@ -231,14 +233,14 @@
                                     </li>
 
                                     <li>
-                                        <a href="#/" class="p-2 d-block">Blog<em class="icon-arrow"></em></a>
+                                        <span class="p-2 d-block">Blog<em class="icon-arrow"></em></span>
                                         <ul class="main-ul">
                                             <li><a href="#/">Blog V1 — Classic</a></li>
                                             <li><a href="#/">Blog V2 — Grid</a></li>
                                             <li><a href="#/">Blog V3 — Masonry</a></li>
                                             <li><a href="#">Blog V4 — With Sidebar</a></li>
                                             <li class="submenu-li">
-                                                <a href="#">Single Post</a>
+                                                <span>Single Post</span>
                                                 <ul class="submenu">
                                                     <li><a href="#">Default</a></li>
                                                     <li><a href="#">With Video</a></li>
@@ -248,7 +250,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="#/" class="p-2 d-block">Gallery<em class="icon-arrow"></em></a>
+                                        <span class="p-2 d-block">Gallery<em class="icon-arrow"></em></span>
                                         <ul class="main-ul">
                                             <li><a href="#/">Gallery V1 — Masonry (3 Col)</a></li>
                                             <li><a href="#/">Gallery V2 — Masonry (4 Col)</a></li>
@@ -257,7 +259,7 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="#/" class="p-2 d-block">Pages<em class="icon-arrow"></em></a>
+                                        <span class="p-2 d-block">Pages<em class="icon-arrow"></em></span>
                                         <ul class="main-ul">
                                             <li><a href="#/">About Us</a></li>
                                             <li><a href="#/">Customer Service</a></li>
@@ -275,10 +277,10 @@
                                     </li>
 
                                     <li class="megamenu">
-                                        <a href="#/" class="p-2 d-block">Womens<em class="icon-arrow"></em></a>
+                                        <span class="p-2 d-block">Womens<em class="icon-arrow"></em></span>
                                         <ul class="main-ul row">
                                             <li class="col-lg-2">
-                                                <a href="#">CLOTHING</a>
+                                                <span>CLOTHING</span>
                                                 <ul>
                                                     <li><a href="#">Coats</a></li>
                                                     <li><a href="#">Jackets</a></li>
@@ -296,7 +298,7 @@
                                                 </ul>
                                             </li>
                                             <li class="col-lg-2">
-                                                <a href="#">SHOES</a>
+                                                <span>SHOES</span>
                                                 <ul>
                                                     <li><a href="#">Trainers</a></li>
                                                     <li><a href="#">Boots & Ankle Boots</a></li>
@@ -307,7 +309,7 @@
                                                 </ul>
                                             </li>
                                             <li class="col-lg-2">
-                                                <a href="#">ACCESSORIES</a>
+                                                <span>ACCESSORIES</span>
                                                 <ul>
                                                     <li><a href="#">Bags</a></li>
                                                     <li><a href="#">Backpacks</a></li>
@@ -322,12 +324,12 @@
                                                     <li><a href="#">Socks</a></li>
                                                 </ul>
                                             </li>
-                                            <li class="col-md-6">
-                                                <a href="#" class="d-block d-sm-none">Featured</a>
+                                            <li class="col-lg-6">
+                                                <span class="d-block d-sm-none">Featured</span>
                                                 <div class="row">
-                                                    <a class="featuredPro text-center covered col-md-6 mb-4" href="#">
+                                                    <a class="featuredPro text-center covered col-lg-6 mb-4" href="#">
                                                         <figure>
-                                                            <img src="lib/images/hdr5.jpg" alt="img">
+                                                            <img src="lib/images/hdr6.jpg" alt="img">
                                                         </figure>
                                                         <figcaption>
                                                             <span>NEW IN</span>
@@ -336,7 +338,7 @@
                                                         </figcaption>
                                                     </a>
 
-                                                    <a class="featuredPro text-center covered col-md-6 mb-4" href="#">
+                                                    <a class="featuredPro text-center covered col-lg-6 mb-4" href="#">
                                                         <figure>
                                                             <img src="lib/images/hdr6.jpg" alt="img">
                                                         </figure>
@@ -345,7 +347,7 @@
                                                             <h6 class="price">Get up to 20% off </h6>
                                                         </figcaption>
                                                     </a>
-                                                    <a class="featuredPro text-center covered col-md-6 mb-4" href="#">
+                                                    <a class="featuredPro text-center covered col-lg-6 mb-4" href="#">
                                                         <figure>
                                                             <img src="lib/images/hdr7.jpg" alt="img">
                                                         </figure>
@@ -354,7 +356,7 @@
                                                             <h6 class="price">Popular Items </h6>
                                                         </figcaption>
                                                     </a>
-                                                    <a class="featuredPro text-center covered col-md-6 mb-4" href="#">
+                                                    <a class="featuredPro text-center covered col-lg-6 mb-4" href="#">
                                                         <figure>
                                                             <img src="lib/images/hdr8.jpg" alt="img">
                                                         </figure>
@@ -368,7 +370,7 @@
                                         </ul>
                                     </li>
                                     <li class="megamenu">
-                                        <a href="#/" class="p-2 d-block">Mens<em class="icon-arrow"></em></a>
+                                        <span class="p-2 d-block">Mens<em class="icon-arrow"></em></span>
                                         <ul class="main-ul row">
                                             <li class="col-lg-3">
                                                 <a class="featuredPro" href="#">
@@ -380,7 +382,7 @@
                                                 </a>
                                             </li>
                                             <li class="col-lg-2">
-                                                <a href="#/">CLOTHING</a>
+                                                <span>CLOTHING</span>
                                                 <figure>
                                                     <img src="lib/images/hdr10.jpg" alt="img">
                                                 </figure>
@@ -397,7 +399,7 @@
                                                     <li><a href="#">Shorts</a></li>
                                                 </ul>
                                             </li>
-                                            <li class="col-lg-2"><a href="#/">SHOES</a>
+                                            <li class="col-lg-2"><span>SHOES</span>
                                                 <figure>
                                                     <img src="lib/images/hdr11.jpg" alt="img">
                                                 </figure>
@@ -408,7 +410,7 @@
                                                     <li><a href="#">Sandals</a></li>
                                                 </ul>
                                             </li>
-                                            <li class="col-lg-2"><a href="#/">ACCESSORIES</a>
+                                            <li class="col-lg-2"><span>ACCESSORIES</span>
                                                 <figure>
                                                     <img src="lib/images/hdr12.jpg" alt="img">
                                                 </figure>
@@ -458,339 +460,811 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3"></div>
-            <div class="col-md-3"></div>
-            <div class="col-md-2"></div>
-            <div class="col-md-2"></div>
-            <div class="col-md-2">
-                <div class="gridview">
-                    <ul>
-                        <li class="gridtwo"><span class="icon-grid2"></span></li>
-                        <li class="gridthree"><span class="icon-grid3"></span></li>
-                        <li class="gridfour"><span class="icon-grid4"></span></li>
-                        <li class="gridone"><span class="icon-gridone"></span></li>
+    <main class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mt-3 mb-4">
+                    <ul class="breadcamp">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Collections</a></li>
+                        <li>Women</li>
                     </ul>
                 </div>
+                <div class="col-md-12 text-center mb-5">
+                    <section class="proBanner">
+                        <img src="lib/images/product-banner.jpg" alt="" />
+                        <div class="innerban">
+                            <article>
+                                <h2>SALE & SPECIAL OFFERS</h2>
+                                <h1>20% OFF</h1>
+                                <p>Free shipping all orders of $49</p>
+                            </article>
+                            <div class="btngroup">
+                                <button class="btn btn-outline m-2"> Women's</button>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container productview">
-        <div class="row">
-            <div class="col col-md-6 mb-4">
-                <div class="product-outr">
-                    <div class="owl-carousel owl-theme" data-slider-id="1">
-                        <div class="item">
-                            <figure>
-                                <img src="lib/images/1-1.webp" alt="" />
-                            </figure>
-                        </div>
-                        <div class="item">
-                            <figure>
-                                <img src="lib/images/1.jpg" alt="" />
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="pro-inr-details">
-                        <h4>Skinny mid-rise trousers</h4>
-                        <div class="detailsProduct">
-                            <p>
-                                SKU:
-                                <span>00102сda-1</span>
-                            </p>
-                            <p>
-                                BARCODE:
-                                <span>1234567890</span>
-                            </p>
-                            <p>
-                                AVAILABILITY:
-                                <a href="#">In stock (8 items)</a>
-                            </p>
-                            <p>
-                                PRODUCT TYPE:<span>Jackets</span>
-                            </p>
-                            <p>
-                                VENDOR: <span>Prada</span>
-                            </p>
-                            <p class="product-description">
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                laudantium, totam rem aperiam,
-                                eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                                explicabo. Nemo enim ipsam
-                                voluptatem quia voluptas sit aspernatur aut...
-                            </p>
-                        </div>
+        <div class="container products mb-md-4">
+            <div class="row">
+                <div class="col-lg-12 mb-4">
+                    <h2>Women's</h2>
+                </div>
+                <div class="col-xl-3 col-md-6 align-self-center">
+                    <a href="javascript:void(0)" class="showfilter"><span class="icon-filter"></span> SHOW FILTER</a>
+                </div>
+                <div class="col-xl-3 d-none d-xl-block align-self-center">
+                    <label>Showing 1–12 of 42 results</label>
+                </div>
+                <div class="col-xl-2 d-none d-xl-block align-self-center">
+                    <label>Sort:</label>
 
-                        <h5 class="price">$170</h5>
-                        <div class="owl-thumbs" data-slider-id="1">
-                            <button class="owl-thumb-item">
-                                <figure>
-                                    <img src="lib/images/1-1.webp" alt="" />
-                                </figure>
+                    <div class="onhover">
+                        <div class="dropdown">
+                            <button class="dropdown-toggle btn" type="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <span id="selected">Chose option</span><span class="icon-arrow"></span>
                             </button>
-                            <button class="owl-thumb-item">
-                                <figure>
-                                    <img src="lib/images/1.jpg" alt="" />
-                                </figure>
-                            </button>
-                        </div>
-                        <div class="sizeoutr">
-                            <ul>
-                                <li><a href="#" class="active">XS</a></li>
-                                <li><a href="#">S</a></li>
-                                <li><a href="#">M</a></li>
-                                <li><a href="#">L</a></li>
-                                <li><a href="#">XL</a></li>
-                            </ul>
-                        </div>
-                        <div class="buttonoutr">
-                            <button class="btn btn-outline">Add to Cart</button>
-                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Wishlist">
-                                <em class="icon-wishlist"></em>
-                            </a>
-                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Compare"><em
-                                    class="icon-compare"></em></a>
+                            <div class="dropdown-menu" id="featured">
+                                <li><a class="dropdown-item" href="#">Featured</a></li>
+                                <li><a class="dropdown-item" href="#">Best Selling</a></li>
+                                <li><a class="dropdown-item" href="#">Price Ascending</a></li>
+                                <li><a class="dropdown-item" href="#">Price Descending</a></li>
+                                <li><a class="dropdown-item" href="#">Price Ascending</a></li>
+                                <li><a class="dropdown-item" href="#">Date Ascending</a></li>
+                                <li><a class="dropdown-item" href="#">Date Descending</a></li>
+                                <li><a class="dropdown-item" href="#">Name Ascending</a></li>
+                                <li><a class="dropdown-item" href="#">Name Descending</a></li>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col col-md-6 mb-4">
-                <div class="product-outr">
-                    <div class="owl-carousel owl-theme" data-slider-id="1">
-                        <div class="item">
-                            <figure>
-                                <img src="lib/images/1-1.webp" alt="" />
-                            </figure>
-                        </div>
-                        <div class="item">
-                            <figure>
-                                <img src="lib/images/1.jpg" alt="" />
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="pro-inr-details">
-                        <h4>Skinny mid-rise trousers</h4>
-                        <div class="detailsProduct">
-                            <p>
-                                SKU:
-                                <span>00102сda-1</span>
-                            </p>
-                            <p>
-                                BARCODE:
-                                <span>1234567890</span>
-                            </p>
-                            <p>
-                                AVAILABILITY:
-                                <a href="#">In stock (8 items)</a>
-                            </p>
-                            <p>
-                                PRODUCT TYPE:<span>Jackets</span>
-                            </p>
-                            <p>
-                                VENDOR: <span>Prada</span>
-                            </p>
-                            <p class="product-description">
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                laudantium, totam rem aperiam,
-                                eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                                explicabo. Nemo enim ipsam
-                                voluptatem quia voluptas sit aspernatur aut...
-                            </p>
-                        </div>
-
-                        <h5 class="price">$170</h5>
-                        <div class="owl-thumbs" data-slider-id="1">
-                            <button class="owl-thumb-item">
-                                <figure>
-                                    <img src="lib/images/1-1.webp" alt="" />
-                                </figure>
+                <div class="col-xl-2 d-none d-xl-block align-self-center">
+                    <label>Show:</label>
+                    <div class="onhover">
+                        <div class="dropdown">
+                            <button aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown"
+                                type="button" id="size" class="dropdown-toggle btn">
+                                <span id="selected2">Chose option</span><span class="icon-arrow"></span>
                             </button>
-                            <button class="owl-thumb-item">
-                                <figure>
-                                    <img src="lib/images/1.jpg" alt="" />
-                                </figure>
-                            </button>
-                        </div>
-                        <div class="sizeoutr">
-                            <ul>
-                                <li><a href="#" class="active">XS</a></li>
-                                <li><a href="#">S</a></li>
-                                <li><a href="#">M</a></li>
-                                <li><a href="#">L</a></li>
-                                <li><a href="#">XL</a></li>
+                            <ul class="dropdown-menu" id="size">
+                                <li><a href="#" class="dropdown-item">6</a></li>
+                                <li><a href="#" class="dropdown-item">12</a></li>
+                                <li><a href="#" class="dropdown-item">18</a></li>
+                                <li><a href="#" class="dropdown-item">24</a></li>
                             </ul>
-                        </div>
-                        <div class="buttonoutr">
-                            <button class="btn btn-outline">Add to Cart</button>
-                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Wishlist">
-                                <em class="icon-wishlist"></em>
-                            </a>
-                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Compare"><em
-                                    class="icon-compare"></em></a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col col-md-6 mb-4">
-                <div class="product-outr">
-                    <div class="owl-carousel owl-theme" data-slider-id="1">
-                        <div class="item">
-                            <figure>
-                                <img src="lib/images/1-1.webp" alt="" />
-                            </figure>
-                        </div>
-                        <div class="item">
-                            <figure>
-                                <img src="lib/images/1.jpg" alt="" />
-                            </figure>
-                        </div>
+                <div class="col-xl-2 text-right col-md-6 align-self-center">
+                    <div class="gridview d-none d-lg-block">
+                        <ul>
+                            <li class="gridtwo"><span class="icon-grid2"></span></li>
+                            <li class="gridthree"><span class="icon-grid3"></span></li>
+                            <li class="gridfour"><span class="icon-grid4"></span></li>
+                            <li class="gridone active"><span class="icon-gridone"></span></li>
+                        </ul>
                     </div>
-                    <div class="pro-inr-details">
-                        <h4>Skinny mid-rise trousers</h4>
-                        <div class="detailsProduct">
-                            <p>
-                                SKU:
-                                <span>00102сda-1</span>
-                            </p>
-                            <p>
-                                BARCODE:
-                                <span>1234567890</span>
-                            </p>
-                            <p>
-                                AVAILABILITY:
-                                <a href="#">In stock (8 items)</a>
-                            </p>
-                            <p>
-                                PRODUCT TYPE:<span>Jackets</span>
-                            </p>
-                            <p>
-                                VENDOR: <span>Prada</span>
-                            </p>
-                            <p class="product-description">
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                laudantium, totam rem aperiam,
-                                eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                                explicabo. Nemo enim ipsam
-                                voluptatem quia voluptas sit aspernatur aut...
-                            </p>
-                        </div>
-
-                        <h5 class="price">$170</h5>
-                        <div class="owl-thumbs" data-slider-id="1">
-                            <button class="owl-thumb-item">
-                                <figure>
-                                    <img src="lib/images/1-1.webp" alt="" />
-                                </figure>
-                            </button>
-                            <button class="owl-thumb-item">
-                                <figure>
-                                    <img src="lib/images/1.jpg" alt="" />
-                                </figure>
-                            </button>
-                        </div>
-                        <div class="sizeoutr">
-                            <ul>
-                                <li><a href="#" class="active">XS</a></li>
-                                <li><a href="#">S</a></li>
-                                <li><a href="#">M</a></li>
-                                <li><a href="#">L</a></li>
-                                <li><a href="#">XL</a></li>
-                            </ul>
-                        </div>
-                        <div class="buttonoutr">
-                            <button class="btn btn-outline">Add to Cart</button>
-                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Wishlist">
-                                <em class="icon-wishlist"></em>
-                            </a>
-                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Compare"><em
-                                    class="icon-compare"></em></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col col-md-6 mb-4">
-                <div class="product-outr">
-                    <div class="owl-carousel owl-theme" data-slider-id="1">
-                        <div class="item">
-                            <figure>
-                                <img src="lib/images/1-1.webp" alt="" />
-                            </figure>
-                        </div>
-                        <div class="item">
-                            <figure>
-                                <img src="lib/images/1.jpg" alt="" />
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="pro-inr-details">
-                        <h4>Skinny mid-rise trousers</h4>
-                        <div class="detailsProduct">
-                            <p>
-                                SKU:
-                                <span>00102сda-1</span>
-                            </p>
-                            <p>
-                                BARCODE:
-                                <span>1234567890</span>
-                            </p>
-                            <p>
-                                AVAILABILITY:
-                                <a href="#">In stock (8 items)</a>
-                            </p>
-                            <p>
-                                PRODUCT TYPE:<span>Jackets</span>
-                            </p>
-                            <p>
-                                VENDOR: <span>Prada</span>
-                            </p>
-                            <p class="product-description">
-                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                                laudantium, totam rem aperiam,
-                                eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                                explicabo. Nemo enim ipsam
-                                voluptatem quia voluptas sit aspernatur aut...
-                            </p>
-                        </div>
-
-                        <h5 class="price">$170</h5>
-                        <div class="owl-thumbs" data-slider-id="1">
-                            <button class="owl-thumb-item">
-                                <figure>
-                                    <img src="lib/images/1-1.webp" alt="" />
-                                </figure>
-                            </button>
-                            <button class="owl-thumb-item">
-                                <figure>
-                                    <img src="lib/images/1.jpg" alt="" />
-                                </figure>
-                            </button>
-                        </div>
-                        <div class="sizeoutr">
-                            <ul>
-                                <li><a href="#" class="active">XS</a></li>
-                                <li><a href="#">S</a></li>
-                                <li><a href="#">M</a></li>
-                                <li><a href="#">L</a></li>
-                                <li><a href="#">XL</a></li>
-                            </ul>
-                        </div>
-                        <div class="buttonoutr">
-                            <button class="btn btn-outline">Add to Cart</button>
-                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Wishlist">
-                                <em class="icon-wishlist"></em>
-                            </a>
-                            <a href="#" data-toggle="tooltip" data-placement="bottom" title="Compare"><em
-                                    class="icon-compare"></em></a>
-                        </div>
+                    <div class="gridview d-block d-lg-none">
+                        <ul>
+                            <li class="gridone active"><span class="icon-gridone"></span></li>
+                            <li class="gridtwo"><span class="icon-grid2"></span></li>
+                            <li class="gridthree"><span class="icon-grid3"></span></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="container productview">
+            <div class="row">
+                <div class="col col-12 mb-4">
+                    <div class="product-outr">
+                        <div class="watch-outr">
+                            <a class="quick-view" href="#"><span class="icon-watch"></span></a>
+
+                            <div class="owl-carousel owl-theme" data-slider-id="1">
+                                <div class="item">
+                                    <figure>
+                                        <img src="lib/images/1-1.webp" alt="" />
+                                    </figure>
+                                </div>
+                                <div class="item">
+                                    <figure>
+                                        <img src="lib/images/1.jpg" alt="" />
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pro-inr-details">
+                            <h4><a href="#">Cotton Jersey Graphic Tee</a></h4>
+                            <div class="detailsProduct">
+                                <p>
+                                    SKU:
+                                    <span>00102сda-1</span>
+                                </p>
+                                <p>
+                                    BARCODE:
+                                    <span>1234567890</span>
+                                </p>
+                                <p>
+                                    AVAILABILITY:
+                                    <a href="#">In stock (8 items)</a>
+                                </p>
+                                <p>
+                                    PRODUCT TYPE:<span>Jackets</span>
+                                </p>
+                                <p>
+                                    VENDOR: <span>Prada</span>
+                                </p>
+                                <p class="product-description">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque
+                                    laudantium, totam rem aperiam,
+                                    eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+                                    dicta
+                                    sunt
+                                    explicabo. Nemo enim ipsam
+                                    voluptatem quia voluptas sit aspernatur aut...
+                                </p>
+                            </div>
+
+                            <h5 class="price">$170</h5>
+                            <div class="owl-thumbs" data-slider-id="1">
+                                <button class="owl-thumb-item">
+                                    <figure>
+                                        <img src="lib/images/1-1.webp" alt="" />
+                                    </figure>
+                                </button>
+                                <button class="owl-thumb-item">
+                                    <figure>
+                                        <img src="lib/images/1.jpg" alt="" />
+                                    </figure>
+                                </button>
+                            </div>
+                            <div class="sizeoutr">
+                                <ul>
+                                    <li><a href="#" class="active">XS</a></li>
+                                    <li><a href="#">S</a></li>
+                                    <li><a href="#">M</a></li>
+                                    <li><a href="#">L</a></li>
+                                    <li><a href="#">XL</a></li>
+                                </ul>
+                            </div>
+                            <div class="buttonoutr">
+                                <button class="btn btn-outline">Add to Cart</button>
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Wishlist">
+                                    <em class="icon-wishlist"></em>
+                                </a>
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Compare"><em
+                                        class="icon-compare"></em></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-12 mb-4">
+                    <div class="product-outr">
+                        <div class="watch-outr">
+                            <a class="quick-view" href="#"><span class="icon-watch"></span></a>
+
+                            <div class="owl-carousel owl-theme" data-slider-id="2">
+                                <div class="item">
+                                    <figure>
+                                        <img src="lib/images/2.jpg" alt="" />
+                                    </figure>
+                                </div>
+                                <div class="item">
+                                    <figure>
+                                        <img src="lib/images/2-1.jpg" alt="" />
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pro-inr-details">
+                            <h4><a href="#">Skinny mid-rise trousers</a></h4>
+                            <div class="detailsProduct">
+                                <p>
+                                    SKU:
+                                    <span>00102сda-1</span>
+                                </p>
+                                <p>
+                                    BARCODE:
+                                    <span>1234567890</span>
+                                </p>
+                                <p>
+                                    AVAILABILITY:
+                                    <a href="#">In stock (8 items)</a>
+                                </p>
+                                <p>
+                                    PRODUCT TYPE:<span>Jackets</span>
+                                </p>
+                                <p>
+                                    VENDOR: <span>Prada</span>
+                                </p>
+                                <p class="product-description">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque
+                                    laudantium, totam rem aperiam,
+                                    eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+                                    sunt
+                                    explicabo. Nemo enim ipsam
+                                    voluptatem quia voluptas sit aspernatur aut...
+                                </p>
+                            </div>
+
+                            <h5 class="price">$50</h5>
+                            <div class="owl-thumbs" data-slider-id="2">
+                                <button class="owl-thumb-item">
+                                    <figure>
+                                        <img src="lib/images/2.jpg" alt="" />
+                                    </figure>
+                                </button>
+                                <button class="owl-thumb-item">
+                                    <figure>
+                                        <img src="lib/images/2-1.jpg" alt="" />
+                                    </figure>
+                                </button>
+                            </div>
+                            <div class="sizeoutr">
+                                <ul>
+                                    <li><a href="#" class="active">XS</a></li>
+                                    <li><a href="#">S</a></li>
+                                    <li><a href="#">M</a></li>
+                                    <li><a href="#">L</a></li>
+                                    <li><a href="#">XL</a></li>
+                                    <li><a href="#">XXL</a></li>
+                                    <li><a href="#">XXXL</a></li>
+                                    <li><a href="#">XXS</a></li>
+                                </ul>
+                            </div>
+                            <div class="buttonoutr">
+                                <button class="btn btn-outline">Add to Cart</button>
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Wishlist">
+                                    <em class="icon-wishlist"></em>
+                                </a>
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Compare"><em
+                                        class="icon-compare"></em></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-12 mb-4">
+                    <div class="product-outr">
+                        <div class="watch-outr">
+                            <a class="quick-view" href="#"><span class="icon-watch"></span></a>
+                            <div class="owl-carousel owl-theme" data-slider-id="3">
+                                <div class="item">
+                                    <figure>
+                                        <img src="lib/images/3.webp" alt="" />
+                                    </figure>
+                                </div>
+                                <div class="item">
+                                    <figure>
+                                        <img src="lib/images/3-1.jpg" alt="" />
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pro-inr-details">
+                            <h4><a href="#">Oversized sweater with slogan</a></h4>
+                            <div class="detailsProduct">
+                                <p>
+                                    SKU:
+                                    <span>00102сda-1</span>
+                                </p>
+                                <p>
+                                    BARCODE:
+                                    <span>1234567890</span>
+                                </p>
+                                <p>
+                                    AVAILABILITY:
+                                    <a href="#">In stock (1 items)</a>
+                                </p>
+                                <p>
+                                    PRODUCT TYPE:<span>Jackets</span>
+                                </p>
+                                <p>
+                                    VENDOR: <span>Prada</span>
+                                </p>
+                                <p class="product-description">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque
+                                    laudantium, totam rem aperiam,
+                                    eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+                                    sunt
+                                    explicabo. Nemo enim ipsam
+                                    voluptatem quia voluptas sit aspernatur aut...
+                                </p>
+                            </div>
+
+                            <h5 class="price">$50</h5>
+                            <div class="owl-thumbs" data-slider-id="3">
+                                <button class="owl-thumb-item">
+                                    <figure>
+                                        <img src="lib/images/3.webp" alt="" />
+                                    </figure>
+                                </button>
+                                <button class="owl-thumb-item">
+                                    <figure>
+                                        <img src="lib/images/3-1.jpg" alt="" />
+                                    </figure>
+                                </button>
+                            </div>
+                            <div class="sizeoutr">
+                                <ul>
+                                    <li><a href="#" class="active">34</a></li>
+                                    <li><a href="#">36</a></li>
+                                </ul>
+                            </div>
+                            <div class="buttonoutr">
+                                <button class="btn btn-outline">Add to Cart</button>
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Wishlist">
+                                    <em class="icon-wishlist"></em>
+                                </a>
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Compare"><em
+                                        class="icon-compare"></em>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-12 mb-4">
+                    <div class="product-outr">
+                        <div class="watch-outr">
+                            <a class="quick-view" href="#"><span class="icon-watch"></span></a>
+                            <div class="owl-carousel owl-theme" data-slider-id="4">
+                                <div class="item">
+                                    <figure>
+                                        <img src="lib/images/4.jpg" alt="" />
+                                    </figure>
+                                </div>
+                                <div class="item">
+                                    <figure>
+                                        <img src="lib/images/4-1.jpg" alt="" />
+                                    </figure>
+                                </div>
+                                <div class="item">
+                                    <figure>
+                                        <img src="lib/images/4-2.jpg" alt="" />
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pro-inr-details">
+                            <h4><a href="#">Loose-fit round neck sweater</a></h4>
+                            <div class="detailsProduct">
+                                <p>
+                                    SKU:
+                                    <span>00102сda-1</span>
+                                </p>
+                                <p>
+                                    BARCODE:
+                                    <span>1234567890</span>
+                                </p>
+                                <p>
+                                    AVAILABILITY:
+                                    <a href="#">In stock (9 items)</a>
+                                </p>
+                                <p>
+                                    PRODUCT TYPE:<span>Pants</span>
+                                </p>
+                                <p>
+                                    VENDOR: <span>Zara</span>
+                                </p>
+                                <p class="product-description">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque
+                                    laudantium, totam rem aperiam,
+                                    eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+                                    sunt
+                                    explicabo. Nemo enim ipsam
+                                    voluptatem quia voluptas sit aspernatur aut...
+                                </p>
+                            </div>
+
+                            <h5 class="price">$150</h5>
+                            <div class="owl-thumbs" data-slider-id="4">
+                                <button class="owl-thumb-item">
+                                    <figure>
+                                        <img src="lib/images/4.jpg" alt="" />
+                                    </figure>
+                                </button>
+                                <button class="owl-thumb-item">
+                                    <figure>
+                                        <img src="lib/images/4-1.jpg" alt="" />
+                                    </figure>
+                                </button>
+                                <button class="owl-thumb-item">
+                                    <figure>
+                                        <img src="lib/images/4-2.jpg" alt="" />
+                                    </figure>
+                                </button>
+                            </div>
+                            <div class="sizeoutr">
+                                <ul>
+                                    <li><a href="#" class="active">30</a></li>
+                                    <li><a href="#">31</a></li>
+                                    <li><a href="#">32</a></li>
+                                    <li><a href="#">33</a></li>
+                                    <li><a href="#">34</a></li>
+                                    <li><a href="#">35</a></li>
+                                    <li><a href="#">36</a></li>
+                                    <li><a href="#">37</a></li>
+                                    <li><a href="#">38</a></li>
+                                    <li><a href="#">39</a></li>
+                                    <li><a href="#">40</a></li>
+                                </ul>
+                            </div>
+                            <div class="buttonoutr">
+                                <button class="btn btn-outline">Add to Cart</button>
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Wishlist">
+                                    <em class="icon-wishlist"></em>
+                                </a>
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Compare"><em
+                                        class="icon-compare"></em>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-12 mb-4">
+                    <div class="product-outr">
+                        <div class="watch-outr">
+                            <a class="quick-view" href="#"><span class="icon-watch"></span></a>
+                            <div class="owl-carousel owl-theme" data-slider-id="5">
+                                <div class="item">
+                                    <figure>
+                                        <img src="lib/images/5.jpg" alt="" />
+                                    </figure>
+                                </div>
+                                <div class="item">
+                                    <figure>
+                                        <img src="lib/images/5-1.jpg" alt="" />
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pro-inr-details">
+                            <h4><a href="#">Ecologically grown cotton T-shirt with print</a></h4>
+                            <div class="detailsProduct">
+                                <p>
+                                    SKU:
+                                    <span>00102сda-1</span>
+                                </p>
+                                <p>
+                                    BARCODE:
+                                    <span>1234567890</span>
+                                </p>
+                                <p>
+                                    AVAILABILITY:
+                                    <a href="#">In stock (97 items)</a>
+                                </p>
+                                <p>
+                                    PRODUCT TYPE:<span>Pants</span>
+                                </p>
+                                <p>
+                                    VENDOR: <span>Zara</span>
+                                </p>
+                                <p class="product-description">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque
+                                    laudantium, totam rem aperiam,
+                                    eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+                                    sunt
+                                    explicabo. Nemo enim ipsam
+                                    voluptatem quia voluptas sit aspernatur aut...
+                                </p>
+                            </div>
+
+                            <h5 class="price">$150</h5>
+                            <div class="owl-thumbs" data-slider-id="5">
+                                <button class="owl-thumb-item">
+                                    <figure>
+                                        <img src="lib/images/5.jpg" alt="" />
+                                    </figure>
+                                </button>
+                                <button class="owl-thumb-item">
+                                    <figure>
+                                        <img src="lib/images/5-1.jpg" alt="" />
+                                    </figure>
+                                </button>
+                            </div>
+                            <div class="sizeoutr">
+                                <ul>
+                                    <li><a href="#" class="active">30</a></li>
+                                    <li><a href="#">31</a></li>
+                                    <li><a href="#">32</a></li>
+                                </ul>
+                            </div>
+                            <div class="buttonoutr">
+                                <button class="btn btn-outline">Add to Cart</button>
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Wishlist">
+                                    <em class="icon-wishlist"></em>
+                                </a>
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Compare"><em
+                                        class="icon-compare"></em>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-12 mb-4">
+                    <div class="product-outr">
+                        <div class="watch-outr">
+                            <a class="quick-view" href="#"><span class="icon-watch"></span></a>
+
+                            <div class="owl-carousel owl-theme" data-slider-id="6">
+                                <div class="item">
+                                    <figure>
+                                        <img src="lib/images/6.jpg" alt="" />
+                                    </figure>
+                                </div>
+                                <div class="item">
+                                    <figure>
+                                        <img src="lib/images/6-1.jpg" alt="" />
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pro-inr-details">
+                            <h4><a href="#">Lace-up trainers with heel detail</a></h4>
+                            <div class="detailsProduct">
+                                <p>
+                                    SKU:
+                                    <span>00102сda-1</span>
+                                </p>
+                                <p>
+                                    BARCODE:
+                                    <span>1234567890</span>
+                                </p>
+                                <p>
+                                    AVAILABILITY:
+                                    <a href="#">In stock (10 items)</a>
+                                </p>
+                                <p>
+                                    PRODUCT TYPE:<span>Shoes</span>
+                                </p>
+                                <p>
+                                    VENDOR: <span>Dior</span>
+                                </p>
+                                <p class="product-description">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque
+                                    laudantium, totam rem aperiam,
+                                    eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+                                    sunt
+                                    explicabo. Nemo enim ipsam
+                                    voluptatem quia voluptas sit aspernatur aut...
+                                </p>
+                            </div>
+
+                            <h5 class="price">$30</h5>
+                            <div class="owl-thumbs" data-slider-id="6">
+                                <button class="owl-thumb-item">
+                                    <figure>
+                                        <img src="lib/images/6.jpg" alt="" />
+                                    </figure>
+                                </button>
+                                <button class="owl-thumb-item">
+                                    <figure>
+                                        <img src="lib/images/6-1.jpg" alt="" />
+                                    </figure>
+                                </button>
+                            </div>
+                            <div class="sizeoutr">
+                                <ul>
+                                    <li><a href="#" class="active">36</a></li>
+                                    <li><a href="#">37</a></li>
+                                    <li><a href="#">38</a></li>
+                                </ul>
+                            </div>
+                            <div class="buttonoutr">
+                                <button class="btn btn-outline">Add to Cart</button>
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Wishlist">
+                                    <em class="icon-wishlist"></em>
+                                </a>
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Compare"><em
+                                        class="icon-compare"></em>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-12 mb-4">
+                    <div class="product-outr">
+                        <div class="watch-outr">
+                            <a class="quick-view" href="#"><span class="icon-watch"></span></a>
+                            <div class="owl-carousel owl-theme" data-slider-id="7">
+                                <div class="item">
+                                    <figure>
+                                        <img src="lib/images/7.jpg" alt="" />
+                                    </figure>
+                                </div>
+                                <div class="item">
+                                    <figure>
+                                        <img src="lib/images/7-1.jpg" alt="" />
+                                    </figure>
+                                </div>
+                                <div class="item">
+                                    <figure>
+                                        <img src="lib/images/7-2.jpg" alt="" />
+                                    </figure>
+                                </div>
+                                <div class="item">
+                                    <figure>
+                                        <img src="lib/images/7-3.jpg" alt="" />
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pro-inr-details">
+                            <h4><a href="#">Puffer jacket with hood</a></h4>
+                            <div class="detailsProduct">
+                                <p>
+                                    SKU:
+                                    <span>00102сda-1</span>
+                                </p>
+                                <p>
+                                    BARCODE:
+                                    <span>1234567890</span>
+                                </p>
+                                <p>
+                                    AVAILABILITY:
+                                    <a href="#">In stock (450 items)</a>
+                                </p>
+                                <p>
+                                    PRODUCT TYPE:<span>Jacket</span>
+                                </p>
+                                <p>
+                                    VENDOR: <span>Calvin Klein</span>
+                                </p>
+                                <p class="product-description">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque
+                                    laudantium, totam rem aperiam,
+                                    eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+                                    sunt
+                                    explicabo. Nemo enim ipsam
+                                    voluptatem quia voluptas sit aspernatur aut...
+                                </p>
+                            </div>
+
+                            <h5 class="price">$250</h5>
+                            <div class="owl-thumbs" data-slider-id="7">
+                                <button class="owl-thumb-item">
+                                    <figure>
+                                        <img src="lib/images/7.jpg" alt="" />
+                                    </figure>
+                                </button>
+                                <button class="owl-thumb-item">
+                                    <figure>
+                                        <img src="lib/images/7-1.jpg" alt="" />
+                                    </figure>
+                                </button>
+                                <button class="owl-thumb-item">
+                                    <figure>
+                                        <img src="lib/images/7-2.jpg" alt="" />
+                                    </figure>
+                                </button>
+                                <button class="owl-thumb-item">
+                                    <figure>
+                                        <img src="lib/images/7-3.jpg" alt="" />
+                                    </figure>
+                                </button>
+                            </div>
+                            <div class="sizeoutr">
+                                <ul>
+                                    <li><a href="#" class="active">XS</a></li>
+                                    <li><a href="#">S</a></li>
+                                    <li><a href="#">M</a></li>
+                                </ul>
+                            </div>
+                            <div class="buttonoutr">
+                                <button class="btn btn-outline">Add to Cart</button>
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Wishlist">
+                                    <em class="icon-wishlist"></em>
+                                </a>
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Compare"><em
+                                        class="icon-compare"></em>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-12 mb-4">
+                    <div class="product-outr">
+                        <div class="watch-outr">
+                            <a class="quick-view" href="#"><span class="icon-watch"></span></a>
+                            <div class="owl-carousel owl-theme" data-slider-id="8">
+                                <div class="item">
+                                    <figure>
+                                        <img src="lib/images/8.jpg" alt="" />
+                                    </figure>
+                                </div>
+                                <div class="item">
+                                    <figure>
+                                        <img src="lib/images/8-1.jpg" alt="" />
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pro-inr-details">
+                            <h4><a href="#">Sweater with slogan</a></h4>
+                            <div class="detailsProduct">
+                                <p>
+                                    SKU:
+                                    <span>00102сda-1</span>
+                                </p>
+                                <p>
+                                    BARCODE:
+                                    <span>1234567890</span>
+                                </p>
+                                <p>
+                                    AVAILABILITY:
+                                    <a href="#">In stock (60 items)</a>
+                                </p>
+                                <p>
+                                    PRODUCT TYPE:<span>Sweatshirts</span>
+                                </p>
+                                <p>
+                                    VENDOR: <span>Levi's</span>
+                                </p>
+                                <p class="product-description">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                    doloremque
+                                    laudantium, totam rem aperiam,
+                                    eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+                                    sunt
+                                    explicabo. Nemo enim ipsam
+                                    voluptatem quia voluptas sit aspernatur aut...
+                                </p>
+                            </div>
+
+                            <h5 class="price">$210</h5>
+                            <div class="owl-thumbs" data-slider-id="8">
+                                <button class="owl-thumb-item">
+                                    <figure>
+                                        <img src="lib/images/8.jpg" alt="" />
+                                    </figure>
+                                </button>
+                                <button class="owl-thumb-item">
+                                    <figure>
+                                        <img src="lib/images/8-1.jpg" alt="" />
+                                    </figure>
+                                </button>
+                            </div>
+                            <div class="sizeoutr">
+                                <ul>
+                                    <li><a href="#" class="active">XS</a></li>
+                                    <li><a href="#">S</a></li>
+                                    <li><a href="#">M</a></li>
+                                </ul>
+                            </div>
+                            <div class="buttonoutr">
+                                <button class="btn btn-outline">Add to Cart</button>
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Wishlist">
+                                    <em class="icon-wishlist"></em>
+                                </a>
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="Compare"><em
+                                        class="icon-compare"></em>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-12 text-center mb-5">
+                    <button class="btn btn-black">Load More</button>
+                </div>
+            </div>
+        </div>
+    </main>
 
 
-    <footer class="footer">
+    <footer class="footer fixed-bottom">
         <div class="container">
             <div class="row mb-md-3">
                 <div class="col-lg-6">
@@ -810,7 +1284,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-2 mb-md-3 dropdown">
+                <div class="col-lg-2 mb-lg-3 dropdown">
                     <h3 class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false">SHOP</h3>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -824,7 +1298,7 @@
                         <li><a href="#">Lookbook</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-2 mb-md-3 dropdown">
+                <div class="col-lg-2 mb-lg-3 dropdown">
                     <h3 class="dropdown-toggle" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false">INFORMATION</h3>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
@@ -838,7 +1312,7 @@
                         <li><a href="#">Documentation</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-2 mb-md-3 dropdown">
+                <div class="col-lg-2 mb-lg-3 dropdown">
                     <h3 class="dropdown-toggle" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false">ORDER</h3>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
@@ -848,7 +1322,7 @@
                         <li><a href="#">Cookie Policy</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-4 mb-md-3 dropdown">
+                <div class="col-lg-4 mb-lg-3 dropdown">
                     <h3 class="dropdown-toggle" id="dropdownMenuButton4" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false">HERE TO HELP</h3>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
@@ -875,7 +1349,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-2 mb-md-3 follow-us">
+                <div class="col-lg-2 mb-lg-3 follow-us mobile-hidden">
                     <h3>FOLLOW US</h3>
                     <ul>
                         <li><a href="#"> <em class="icon-facebook"></em> Facebook</a></li>
@@ -893,14 +1367,28 @@
         <div class="bottom-footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-2 pr-0">
+                    <div class="col-lg-2 pr-md-0">
                         <a href="index.html" class="ftr-logo">
                             <em class="icon-2x icon-logo"></em>
                         </a>
                     </div>
-                    <div class="col-lg-4 pl-0">
-                        <p>shella-demo
-                            &copy; 2019 Shella Fashion Store HTML. All Rights Reserved. Ecommerce Software by HTML.</p>
+                    <div class="col-lg-4 pl-md-0">
+                        <p>
+                            shella-demo
+                            &copy; 2019 Shella Fashion Store HTML. All Rights Reserved. Ecommerce Software by HTML.
+                        </p>
+                        <div class="follow-show follow-us">
+                            <ul>
+                                <li><a href="#"> <em class="icon-facebook"></em> Facebook</a></li>
+                                <li><a href="#"> <em class="icon-twitter"></em> Twitter</a></li>
+                                <li><a href="#"> <em class="icon-google"></em> Google</a></li>
+                                <li><a href="#"> <em class="icon-insta"></em> Instagram</a></li>
+                                <li><a href="#"> <em class="icon-pint"></em> Pinterest</a></li>
+                                <li><a href="#"> <em class="icon-youTube"></em> Youtube</a></li>
+                                <li><a href="#"> <em class="icon-behance"></em> Behance</a></li>
+                                <li><a href="#"> <em class="icon-skype"></em> Skype</a></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="col-lg-6 text-right">
                         <ul class="payment">
@@ -952,6 +1440,191 @@
     </footer>
 
 
+    <section class="filter-popup">
+        <div class="mb-5"><a class="btn-close" href="javascript:void(0);"><span aria-hidden="true">&times;</span>
+                Close</a></div>
+        <div class="clearfix size brands">
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="Collection" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Collection
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="Collection">
+                    <ul>
+                        <li>
+                            <input type="checkbox" /> Shop <span class="count">42</span>
+                        </li>
+                        <li><input type="checkbox" /> Men <span class="count">22</span></li>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix brands color">
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="color" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    Color
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="color">
+                    <ul>
+                        <li class="red"></li>
+                        <li class="orange"></li>
+                        <li class="yellow"></li>
+                        <li class="green"></li>
+                        <li class="black"></li>
+                        <li class="grey"></li>
+                        <li class="blue"></li>
+                        <li class="ash"></li>
+                        <li class="white"></li>
+                        <li class="darkpink"></li>
+                        <li class="lightping"></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="clearfix size brands">
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="size" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    Size
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="size">
+                    <ul class="col-6">
+                        <li><input type="checkbox" /> 30</li>
+                        <li><input type="checkbox" /> 32</li>
+                        <li><input type="checkbox" /> 34</li>
+                        <li><input type="checkbox" /> 36</li>
+                        <li><input type="checkbox" /> 38</li>
+                        <li><input type="checkbox" /> 40</li>
+                        <li><input type="checkbox" /> 42</li>
+                        <li><input type="checkbox" /> 44</li>
+                    </ul>
+                    <ul class="col-6">
+                        <li><input type="checkbox" /> XXS</li>
+                        <li><input type="checkbox" /> XS</li>
+                        <li><input type="checkbox" /> S</li>
+                        <li><input type="checkbox" /> M</li>
+                        <li><input type="checkbox" /> L</li>
+                        <li><input type="checkbox" /> XXL</li>
+                        <li><input type="checkbox" /> XXXL</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix brands">
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="range" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    Price
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="range">
+                    <section class="range-slider">
+                        <span class=" d-inline-block">0</span>
+
+                        <input id="ex2" type="text" class="span2" value="" data-slider-min="10" data-slider-max="900"
+                            data-slider-step="5" data-slider-value="[0,900]" />
+                        <span class="d-inline-block leftspace">900</span>
+
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix brands">
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="brands" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Brands
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="brands">
+                    <ul>
+                        <li><input type="checkbox" /> Calvin Klein</li>
+                        <li><input type="checkbox" /> Chanel</li>
+                        <li><input type="checkbox" /> Dior</li>
+                        <li><input type="checkbox" /> Dolce & Gabbana</li>
+                        <li><input type="checkbox" /> Gap</li>
+                        <li><input type="checkbox" /> Giorgio Armani</li>
+                        <li><input type="checkbox" /> Lacoste</li>
+                        <li><input type="checkbox" /> Levi's</li>
+                        <li><input type="checkbox" /> Prada</li>
+                        <li><input type="checkbox" /> Versace</li>
+                        <li><input type="checkbox" /> Zara</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="ftr-prod">
+            <h2><a href="#">FEATURED PRODUCTS</a></h2>
+            <div class="details-pro mb-4 clearfix">
+                <div>
+                    <figure><img src="lib/images/1-1.webp" /></figure>
+                    <div class="pro-detils">
+                        <h3>Featured Products</h3>
+                        <h4>Jersey Graphic Tee </h4>
+                        <h5>$330.00</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="details-pro mb-4 clearfix">
+                <div>
+                    <figure><img src="lib/images/1-1.webp" /></figure>
+                    <div class="pro-detils">
+                        <h3>Featured Products</h3>
+                        <h4>Jersey Graphic Tee </h4>
+                        <h5>$330.00</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="details-pro mb-4 clearfix">
+                <div>
+                    <figure><img src="lib/images/1-1.webp" /></figure>
+                    <div class="pro-detils">
+                        <h3>Featured Products</h3>
+                        <h4>Jersey Graphic Tee </h4>
+                        <h5>$330.00</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="shipping-information">
+            <h2><a href="#">CUSTOM CMS BLOCK</a></h2>
+            <div class="iconshipOutr">
+                <em class="icon-shipping icon-2x"></em>
+                <p>
+                    <span>Free Shipping.</span>
+                    All orders of $49 or more of eligible items across any product category
+                    qualify.
+                </p>
+            </div>
+
+            <div class="iconshipOutr">
+                <em class="icon-payment icon-2x"></em>
+                <p>
+                    <span>Payment Methods.</span>
+                    Credit Card: Visa, MasterCard, Maestro, American Express.
+                </p>
+            </div>
+
+            <div class="iconshipOutr">
+                <em class="icon-return icon-2x"></em>
+                <p>
+                    <span>Returns and Refunds.</span>
+                    You can return any item purchased on Shella within 20 days of the delivery date.
+                </p>
+            </div>
+        </section>
+        <a class="featuredPro text-center covered mb-4" href="#">
+            <figure>
+                <img src="lib/images/hdr6.jpg" alt="img">
+            </figure>
+            <figcaption>
+                <span>NEW IN</span>
+                <h6 class="price">Spring/Summer 2019 Collection
+                </h6>
+            </figcaption>
+        </a>
+    </section>
+    <section class="wrapper"></section>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="lib/js/jquery-3.2.1.min.js"></script>
@@ -960,6 +1633,7 @@
     <script src="plugins/menu/js/mmenu.js"></script>
     <script src="plugins/owlcarousel/js/owl.carousel.min.js"></script>
     <script src="plugins/owlcarousel/js/owl.carousel2.thumbs.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap-slider.js"></script>
 
     <script src="lib/js/custom.js"></script>
 </body>

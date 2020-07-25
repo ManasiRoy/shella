@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'stella';
-  src:  url('fonts/stella.eot?lemxqj');
-  src:  url('fonts/stella.eot?lemxqj#iefix') format('embedded-opentype'),
-    url('fonts/stella.ttf?lemxqj') format('truetype'),
-    url('fonts/stella.woff?lemxqj') format('woff'),
-    url('fonts/stella.svg?lemxqj#stella') format('svg');
+  src:  url('fonts/stella.eot?w83zf6');
+  src:  url('fonts/stella.eot?w83zf6#iefix') format('embedded-opentype'),
+    url('fonts/stella.ttf?w83zf6') format('truetype'),
+    url('fonts/stella.woff?w83zf6') format('woff'),
+    url('fonts/stella.svg?w83zf6#stella') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-tick:before {
+  content: "\e945";
+}
+.icon-filter:before {
+  content: "\e944";
+}
 .icon-leftarrow:before {
   content: "\e943";
 }
