@@ -27,17 +27,20 @@
                     <div class="col align-self-center text-right logoarea">
                         <a href="index.html" class="logo"><em class="icon-logo icon-2x"></em></a>
                         <ul>
-                            <li class="mobile-hidden"><a href="" data-toggle="tooltip" data-placement="bottom"
-                                    title="Search"><em class="icon-search"></em></a></li>
-                            <li><a href="" data-toggle="tooltip" data-placement="bottom" title="Client Service"><em
-                                        class="icon-client-service"></em></a></li>
-                            <li><a href="" data-toggle="tooltip" data-placement="bottom" title="Account"><em
-                                        class="icon-account"></em></a></li>
-                            <li><a href="" data-toggle="tooltip" data-placement="bottom" title="Wishlist"><em
-                                        class="icon-wishlist"></em></a></li>
-                            <li><a href="" data-toggle="tooltip" data-placement="bottom" title="Compare"><em
-                                        class="icon-compare"></em></a></li>
-                            <li><a href=""><em class="icon-bag"></em> <span class="bag">Bag</span><span>(0)</span></a>
+                            <li class="mobile-hidden">
+                                <a href="javascript:void(0);" data-toggle="tooltip" data-placement="bottom"
+                                    title="Search" class="search"><em class="icon-search"></em></a></li>
+                            <li><a href="javascript:void(0);" data-toggle="tooltip" data-placement="bottom"
+                                    title="Client Service"><em class="icon-client-service"></em></a></li>
+                            <li>
+                                <a href="javascript:void(0);" data-toggle="tooltip" data-placement="bottom"
+                                    title="Account" class="account-details"><em class="icon-account"></em></a></li>
+                            <li><a href="javascript:void(0);" data-toggle="tooltip" data-placement="bottom"
+                                    title="Wishlist"><em class="icon-wishlist"></em></a></li>
+                            <li><a href="javascript:void(0);" data-toggle="tooltip" data-placement="bottom"
+                                    title="Compare"><em class="icon-compare"></em></a></li>
+                            <li><a href="javascript:void(0);" class="bagdetails"><em class="icon-bag"></em> <span
+                                        class="bag">Bag</span><span>(0)</span></a>
                             </li>
                             <li class="mobile-hidden onhover">
                                 <div class="dropdown">
@@ -1439,6 +1442,98 @@
         </div>
     </footer>
 
+    <section class="login-outr">
+        <div class="mb-4">
+            <div class="mb-4"><a class="btn-close" href="javascript:void(0);"><span aria-hidden="true">&times;</span>
+                    Close</a></div>
+
+            <div class="loginoutr">
+                <h4 class="popup-heading">MY ACCOUNT</h4>
+                <form>
+                    <div class="form-group">
+                        <label>EMAIL</label>
+                        <input type="text" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-outline">Submit</button>
+                    </div>
+                    <div class="mb3">
+                        <a href="#" class="return">RETURN TO STORE</a>
+                    </div>
+                    <div class="mb3">
+                        <a href="#" class="forgotpassword">Forgot Your Password?</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="mb-4">
+            <h4 class="popup-heading">SIGN UP</h4>
+            <h5>Enjoy the benefits of registering:</h5>
+            <ul>
+                <li>Order: view Order History, track and manage purchases and returns</li>
+                <li>Address Book and Card Wallet: safely store delivery and payment details for faster checkout</li>
+                <li>Saved for later: wish list your preferred items and track their availability</li>
+            </ul>
+            <button type="submit" class="btn btn-outline">Sign up now</button>
+        </div>
+    </section>
+
+    <section class="bag-popup">
+        <div class="mb-5"><a class="btn-close" href="javascript:void(0);"><span aria-hidden="true">&times;</span>
+                Close</a></div>
+
+        <div class="ftr-prod">
+            <h2><a href="#">MY BAG (3)</a></h2>
+            <div class="bag-inr">
+                <div class="details-pro mb-4 clearfix">
+                    <div>
+                        <figure><img src="lib/images/1-1.webp" /></figure>
+                        <div class="pro-detils">
+                            <h3>Jersey Graphic Tee Dolce</h3>
+                            <h4>Jersey Graphic Tee </h4>
+                            <h5>1 * $330.00</h5>
+                            <a href="#" class="remove">Remove</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-pro mb-4 clearfix">
+                    <div>
+                        <figure><img src="lib/images/1-1.webp" /></figure>
+                        <div class="pro-detils">
+                            <h3>Jersey Graphic Tee Dolce</h3>
+                            <h4>Jersey Graphic Tee </h4>
+                            <h5>1 * $330.00</h5>
+                            <a href="#" class="remove">Remove</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-pro mb-4 clearfix">
+                    <div>
+                        <figure><img src="lib/images/1-1.webp" /></figure>
+                        <div class="pro-detils">
+                            <h3>Jersey Graphic Tee Dolce</h3>
+                            <h4>Jersey Graphic Tee </h4>
+                            <h5>1 * $330.00</h5>
+                            <a href="#" class="remove">Remove</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bag-inr no-border">
+                <h2><a href="#">SUBTOTAL: $821</a></h2>
+                <a href="#" class="freeshipping"><span class="icon-free-shipping icon-2x"></span><span>Free
+                        Shipping</span></a>
+                <button type="submit" class="btn btn-outline dark">PROCEED TO CHECKOUT</button>
+                <button type="submit" class="btn btn-outline">VIEW SHOPPING BAG</button>
+            </div>
+        </div>
+
+
+    </section>
 
     <section class="filter-popup">
         <div class="mb-5"><a class="btn-close" href="javascript:void(0);"><span aria-hidden="true">&times;</span>
@@ -1624,6 +1719,26 @@
             </figcaption>
         </a>
     </section>
+
+    <section class="search-outr">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="d-flex justify-content-between">
+                        <h3>WHAT ARE YOU LOOKING FOR?</h3>
+                        <a class="btn-close" href="javascript:void(0);"><span aria-hidden="true">&times;</span>
+                            Close</a>
+                    </div>
+                    <div class="inputoutr">
+                        <input class="form-control" placeholder="Search Products..." />
+                        <button class="searchbtn" type="submit">
+                            <span class="icon-search"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="wrapper"></section>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -1634,6 +1749,8 @@
     <script src="plugins/owlcarousel/js/owl.carousel.min.js"></script>
     <script src="plugins/owlcarousel/js/owl.carousel2.thumbs.min.js"></script>
     <script src="plugins/bootstrap/js/bootstrap-slider.js"></script>
+    <script src="lib/js/filter.js"></script>
+    <script src="lib/js/login.js"></script>
 
     <script src="lib/js/custom.js"></script>
 </body>
