@@ -21,6 +21,10 @@ img {
     }
 }
 
+a {
+    cursor: pointer;
+}
+
 .hrd-main {
     background: $color2;
     padding: 5px 0 0;
@@ -225,15 +229,31 @@ img {
                         display: flex;
                         min-width: inherit;
                         min-width: inherit;
-                        max-width: 1200px;
+                        padding-left: 10.5%;
+                        padding-right: 10.5%;
                         margin: auto;
                         right: 0;
+                        box-shadow: none;
+
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            top: 0%;
+                            background-color: white;
+                            left: 0;
+                            right: 0;
+                            margin: auto;
+                            width: 100%;
+                            height: 100%;
+                            z-index: -1;
+                        }
 
                         li {
                             a {
                                 font-size: 15px;
                                 text-transform: uppercase;
                                 color: $color2;
+                                cursor: pointer;
                             }
 
                             ul {
@@ -246,6 +266,7 @@ img {
                                         font-size: 13px;
                                         text-transform: inherit;
                                         color: $color1;
+                                        cursor: pointer;
                                     }
                                 }
                             }
@@ -352,6 +373,11 @@ img {
     margin: auto;
     top: 0;
     width: 70px;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
 }
 
 .sticky {
@@ -1229,7 +1255,7 @@ img {
     top: 0;
     left: 0;
     right: auto;
-    width: 270px;
+    width: 300px;
     z-index: 9999;
     height: 100vh;
     transform: translateX(-100%);
@@ -1616,7 +1642,188 @@ body.fixed {
             }
         }
     }
-
 }
+
+.product-details {
+    .productview {
+        .carousel-indicators {
+            li {
+                background-color: $color2;
+                width: 10px;
+                height: 10px;
+                border-radius: 100%;
+
+                &.active {
+                    background-color: $color1;
+                }
+            }
+        }
+    }
+
+    .product-heading {
+        font-size: 18px;
+        color: $color2;
+    }
+}
+
+.tag {
+    font-size: 10px;
+    color: white;
+    @extend .display-inline-block;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    z-index: 999;
+
+    .taginr {
+        padding: 0.2rem 0.5rem;
+        display: block;
+        margin-bottom: 5px;
+        max-width: 40px;
+    }
+
+    .orange {
+        background-color: #f54337;
+    }
+
+    .blue {
+        background-color: #42a5f6;
+    }
+
+    .light-orange {
+        background-color: #ff7143;
+    }
+}
+
+.responsiveTab {
+    ul.r-tabs-nav {
+        padding: 0;
+        margin: 0;
+
+        li {
+            border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
+
+            a {
+                @extend .display-inline-block;
+                padding: 0.5rem 1rem;
+                color: $color1;
+                font-size: 13px;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+
+            &.r-tabs-state-active {
+                border: 1px solid rgba($color: #000000, $alpha: 0.1);
+                border-bottom: none;
+            }
+        }
+
+    }
+
+    .r-tabs-panel {
+        h2 {
+            font-size: 18px;
+            color: $color2;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: $color1;
+        }
+
+        .left-right-content {
+            margin-bottom: 25px;
+
+            p {
+                overflow: hidden;
+            }
+
+            .left-image {
+                float: left;
+                margin: 0 20px 20px 0;
+            }
+
+            .right-image {
+                float: right;
+                margin: 0 0 20px 20px;
+            }
+        }
+
+        .unorderUL {
+            padding: 0 0 0 15px;
+
+            li {
+                padding: 0.5rem 0 0;
+                color: $color1;
+                font-size: 13px;
+            }
+        }
+
+        .table {
+            margin-bottom: 40px;
+
+            tr:first-child {
+                td {
+                    border-top: none;
+                }
+            }
+
+            td {
+                color: $color2;
+
+                &:first-child {
+                    color: $color1;
+                    width: 100px;
+                }
+            }
+        }
+
+        .note {
+            font-size: 15px;
+        }
+
+        .listall {
+            ul {
+                padding: 0 0 0 15px;
+
+                li {
+                    padding: 0.5rem 0 0;
+                    color: $color1;
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .btn-outline {
+            border: 1px solid $color2;
+            color: $color2;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @import "./responsive.scss";
