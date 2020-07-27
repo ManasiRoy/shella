@@ -9,7 +9,7 @@ img {
   max-width: 100%; }
 
 .display-inline-block, .hrd-main .upHdr ul li, .hrd-main .upHdr ul li a, .hrd-main .upHdr ul li a em, .hrd-main .upHdr ul li .dropdown button.dropdown-toggle, .hrd-main .upHdr ul li .dropdown button.dropdown-toggle:after, .footer ul li span,
-.footer ul li a, .footer ul.payment li, .product-outr .sizeoutr ul li, .product-outr .quick-view span, .gridview ul li, .bannerSlider.owl-carousel .owl-dots .owl-dot, .filter-popup .brands input[type="checkbox"], .login-outr .brands input[type="checkbox"], .bag-popup .brands input[type="checkbox"], .breadcamp li, .breadcamp li a, .bag-popup .bag-inr a.freeshipping span, .tag, .responsiveTab ul.r-tabs-nav li a {
+.footer ul li a, .footer ul.payment li, .product-outr .sizeoutr ul li, .product-outr .quick-view span, .gridview ul li, .bannerSlider.owl-carousel .owl-dots .owl-dot, .filter-popup .brands input[type="checkbox"], .login-outr .brands input[type="checkbox"], .bag-popup .brands input[type="checkbox"], .breadcamp li, .breadcamp li a, .bag-popup .bag-inr a.freeshipping span, .tag, .responsiveTab ul.r-tabs-nav li a, .product-details .productview.product-list .product-outr .pro-inr-details .order span.icon-shipping, .product-details .productview.product-list .product-outr .pro-inr-details .order p span {
   display: inline-block;
   vertical-align: middle; }
 
@@ -158,7 +158,7 @@ a {
           right: 0;
           box-shadow: none; }
           .navbar-menu li.megamenu:hover .main-ul:before {
-            content: '';
+            content: "";
             position: absolute;
             top: 0%;
             background-color: white;
@@ -1132,6 +1132,28 @@ body.fixed {
 .responsiveTab .r-tabs-panel .btn-outline {
   border: 1px solid #141414;
   color: #141414; }
+
+.product-details .productview.product-list .product-outr .pro-inr-details h4 a {
+  font-size: 24px; }
+.product-details .productview.product-list .product-outr .pro-inr-details h5 {
+  font-size: 24px; }
+.product-details .productview.product-list .product-outr .pro-inr-details .order {
+  padding: 0.5rem;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.1);
+  display: flex; }
+  .product-details .productview.product-list .product-outr .pro-inr-details .order span.icon-shipping {
+    margin: 0 5px 0 0;
+    font-size: 1rem; }
+  .product-details .productview.product-list .product-outr .pro-inr-details .order p {
+    overflow: hidden;
+    margin: 0;
+    font-size: 13px; }
+    .product-details .productview.product-list .product-outr .pro-inr-details .order p .red-color {
+      color: #f54337; }
+    .product-details .productview.product-list .product-outr .pro-inr-details .order p .black-color {
+      color: #141414; }
 
 @media only screen and (max-width: 1400px) {
   .bannerSlider.owl-carousel .item .video-responsive video {
