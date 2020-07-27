@@ -9,7 +9,7 @@ img {
   max-width: 100%; }
 
 .display-inline-block, .hrd-main .upHdr ul li, .hrd-main .upHdr ul li a, .hrd-main .upHdr ul li a em, .hrd-main .upHdr ul li .dropdown button.dropdown-toggle, .hrd-main .upHdr ul li .dropdown button.dropdown-toggle:after, .footer ul li span,
-.footer ul li a, .footer ul.payment li, .product-outr .sizeoutr ul li, .product-outr .quick-view span, .gridview ul li, .bannerSlider.owl-carousel .owl-dots .owl-dot, .filter-popup .brands input[type="checkbox"], .login-outr .brands input[type="checkbox"], .bag-popup .brands input[type="checkbox"], .breadcamp li, .breadcamp li a, .bag-popup h2 a, .bag-popup .bag-inr a.freeshipping span, .tag, .responsiveTab ul.r-tabs-nav li a, .product-details .productview.product-list .product-outr .pro-inr-details .order span.icon-shipping, .product-details .productview.product-list .product-outr .pro-inr-details .order p span, .product-details .productview.product-list .product-outr .pro-inr-details .realcounter .countdown, .product-details .productview.product-list .product-outr .pro-inr-details .link a, .product-details .productview.product-list .product-outr .pro-inr-details .gurantee .payment li, .product-details .productview.product-list .product-outr .pro-inr-details span.green-bg {
+.footer ul li a, .footer ul.payment li, .product-outr .sizeoutr ul li, .product-outr .quick-view span, .gridview ul li, .bannerSlider.owl-carousel .owl-dots .owl-dot, .filter-popup .brands input[type="checkbox"], .login-outr .brands input[type="checkbox"], .bag-popup .brands input[type="checkbox"], .breadcamp li, .breadcamp li a, .bag-popup h2 a, .bag-popup .bag-inr a.freeshipping span, .tag, .responsiveTab ul.r-tabs-nav li a, .product-details .productview.product-list .product-outr .pro-inr-details .order span.icon-shipping, .product-details .productview.product-list .product-outr .pro-inr-details .order p span, .product-details .productview.product-list .product-outr .pro-inr-details .realcounter .countdown, .product-details .productview.product-list .product-outr .pro-inr-details .link a, .product-details .productview.product-list .product-outr .pro-inr-details .gurantee .payment li, .product-details .productview.product-list .product-outr .pro-inr-details span.green-bg, .zoombtn {
   display: inline-block;
   vertical-align: middle; }
 
@@ -1305,6 +1305,80 @@ body.fixed {
 
 .container.productview.product-list {
   max-width: 1560px; }
+
+div#exampleModal {
+  background: black;
+  width: 100%;
+  height: 100%;
+  margin: auto !important;
+  justify-content: center;
+  padding: 0 !important; }
+  div#exampleModal button.close {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    opacity: 1;
+    z-index: 9; }
+  div#exampleModal .modal-dialog {
+    margin: auto;
+    width: 100%;
+    max-width: 100%;
+    height: 100%; }
+    div#exampleModal .modal-dialog .modal-content {
+      padding: 0;
+      background: transparent;
+      border-radius: 0;
+      height: 100%; }
+      div#exampleModal .modal-dialog .modal-content .modal-body {
+        padding: 0;
+        text-align: center;
+        height: 100%; }
+        div#exampleModal .modal-dialog .modal-content .modal-body figure {
+          max-width: 550px;
+          height: 100%;
+          margin: auto; }
+          div#exampleModal .modal-dialog .modal-content .modal-body figure img {
+            height: 100%; }
+        div#exampleModal .modal-dialog .modal-content .modal-body .owl-carousel,
+        div#exampleModal .modal-dialog .modal-content .modal-body .owl-stage-outer,
+        div#exampleModal .modal-dialog .modal-content .modal-body .owl-stage,
+        div#exampleModal .modal-dialog .modal-content .modal-body .owl-item,
+        div#exampleModal .modal-dialog .modal-content .modal-body .item {
+          height: 100%; }
+        div#exampleModal .modal-dialog .modal-content .modal-body .owl-nav {
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: auto;
+          top: 50%;
+          transform: translateY(-50%);
+          -webkit-transform: translateY(-50%);
+          color: #fff;
+          font-size: 1.5rem; }
+          div#exampleModal .modal-dialog .modal-content .modal-body .owl-nav .owl-prev,
+          div#exampleModal .modal-dialog .modal-content .modal-body .owl-nav .owl-next {
+            font-size: 2.5em;
+            border: none;
+            outline: none;
+            line-height: 1; }
+            div#exampleModal .modal-dialog .modal-content .modal-body .owl-nav .owl-prev:focus,
+            div#exampleModal .modal-dialog .modal-content .modal-body .owl-nav .owl-next:focus {
+              border: none;
+              outline: none; }
+          div#exampleModal .modal-dialog .modal-content .modal-body .owl-nav .owl-prev {
+            left: 2%;
+            position: absolute; }
+          div#exampleModal .modal-dialog .modal-content .modal-body .owl-nav .owl-next {
+            right: 2%;
+            position: absolute; }
+
+.zoombtn {
+  outline: none;
+  border: none;
+  font-size: 13px;
+  color: #858585;
+  background: transparent;
+  cursor: pointer; }
 
 @media only screen and (max-width: 1400px) {
   .bannerSlider.owl-carousel .item .video-responsive video {

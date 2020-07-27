@@ -1,5 +1,4 @@
 @import "./layout.scss";
-@import "./mixin.scss";
 
 body {
     font-family: "Archivo", sans-serif;
@@ -2101,5 +2100,131 @@ body.fixed {
 .container.productview.product-list {
     max-width: 1560px;
 }
+
+div#exampleModal {
+    background: black;
+    width: 100%;
+    height: 100%;
+    margin: auto !important;
+    justify-content: center;
+    padding: 0 !important;
+
+    button.close {
+        position: absolute;
+        right: 5px;
+        top: 0;
+        opacity: 1;
+        z-index: 9;
+    }
+
+    .modal-dialog {
+        margin: auto;
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+
+        .modal-content {
+            padding: 0;
+            background: transparent;
+            border-radius: 0;
+            height: 100%;
+
+            .modal-body {
+                padding: 0;
+                text-align: center;
+                height: 100%;
+
+                figure {
+                    max-width: 550px;
+                    height: 100%;
+                    margin: auto;
+
+                    img {
+                        height: 100%;
+                    }
+                }
+
+                .owl-carousel,
+                .owl-stage-outer,
+                .owl-stage,
+                .owl-item,
+                .item {
+                    height: 100%;
+                }
+
+                .owl-nav {
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    -webkit-transform: translateY(-50%);
+                    color: #fff;
+                    font-size: 1.5rem;
+
+                    .owl-prev,
+                    .owl-next {
+                        font-size: 2.5em;
+                        border: none;
+                        outline: none;
+                        line-height: 1;
+
+                        &:focus {
+                            border: none;
+                            outline: none;
+                        }
+                    }
+
+                    .owl-prev {
+                        left: 2%;
+                        position: absolute;
+                    }
+
+                    .owl-next {
+                        right: 2%;
+                        position: absolute;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.zoombtn {
+    outline: none;
+    border: none;
+    font-size: 13px;
+    color: $color1;
+    background: transparent;
+    @extend .display-inline-block;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @import "./responsive.scss";
