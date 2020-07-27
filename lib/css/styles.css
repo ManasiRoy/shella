@@ -9,7 +9,7 @@ img {
   max-width: 100%; }
 
 .display-inline-block, .hrd-main .upHdr ul li, .hrd-main .upHdr ul li a, .hrd-main .upHdr ul li a em, .hrd-main .upHdr ul li .dropdown button.dropdown-toggle, .hrd-main .upHdr ul li .dropdown button.dropdown-toggle:after, .footer ul li span,
-.footer ul li a, .footer ul.payment li, .product-outr .sizeoutr ul li, .product-outr .quick-view span, .gridview ul li, .bannerSlider.owl-carousel .owl-dots .owl-dot, .filter-popup .brands input[type="checkbox"], .login-outr .brands input[type="checkbox"], .bag-popup .brands input[type="checkbox"], .breadcamp li, .breadcamp li a, .bag-popup .bag-inr a.freeshipping span, .tag, .responsiveTab ul.r-tabs-nav li a, .product-details .productview.product-list .product-outr .pro-inr-details .order span.icon-shipping, .product-details .productview.product-list .product-outr .pro-inr-details .order p span {
+.footer ul li a, .footer ul.payment li, .product-outr .sizeoutr ul li, .product-outr .quick-view span, .gridview ul li, .bannerSlider.owl-carousel .owl-dots .owl-dot, .filter-popup .brands input[type="checkbox"], .login-outr .brands input[type="checkbox"], .bag-popup .brands input[type="checkbox"], .breadcamp li, .breadcamp li a, .bag-popup h2 a, .bag-popup .bag-inr a.freeshipping span, .tag, .responsiveTab ul.r-tabs-nav li a, .product-details .productview.product-list .product-outr .pro-inr-details .order span.icon-shipping, .product-details .productview.product-list .product-outr .pro-inr-details .order p span {
   display: inline-block;
   vertical-align: middle; }
 
@@ -967,7 +967,19 @@ body.fixed {
       font-size: 17px; }
 
 .bag-popup {
-  transform: translateX(-100%); }
+  transform: translateX(100%);
+  right: 0;
+  left: auto; }
+  .bag-popup .ftr-prod {
+    border: none;
+    padding: 0; }
+  .bag-popup h2 {
+    display: flex;
+    justify-content: space-between; }
+    .bag-popup h2 a {
+      align-self: center; }
+    .bag-popup h2 .btn-close {
+      font-size: 10px; }
   .bag-popup .remove {
     color: #858585; }
   .bag-popup .bag-inr {

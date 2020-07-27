@@ -1525,8 +1525,24 @@ body.fixed {
 
 .bag-popup {
     @extend .filter-popup;
-    transform: translateX(-100%);
-
+    transform: translateX(100%);
+    right: 0;
+    left: auto;
+    .ftr-prod {
+        border: none;
+        padding: 0;
+    }
+    h2 {
+        display: flex;
+        justify-content: space-between;
+        a {
+            @extend .display-inline-block;
+            align-self: center;
+        }
+        .btn-close {
+            font-size: 10px;
+        }
+    }
     .remove {
         color: $color1;
     }
