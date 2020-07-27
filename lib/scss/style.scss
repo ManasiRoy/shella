@@ -1854,6 +1854,60 @@ body.fixed {
                         }
                     }
                     .realcounter {
+                        margin-bottom: 15px;
+                        padding-bottom: 15px;
+                        border-bottom: 1px dashed rgba($color: #000000, $alpha: 0.1);
+                        p {
+                            font-size: 15px;
+                            color: $color2;
+                        }
+                        .countdown {
+                            @extend .display-inline-block;
+                            background: $color2;
+                            color: white;
+                            padding: 0.2rem 0.5rem;
+                        }
+                    }
+                    h6 {
+                        color: $color1;
+                        font-size: 15px;
+                    }
+                    .link {
+                        margin-bottom: 15px;
+                        a {
+                            @extend .display-inline-block;
+                            color: $color2;
+                            font-size: 13px;
+                            text-decoration: underline;
+                            margin: 0 15px 0 0;
+                        }
+                    }
+                    .quantity {
+                        h5 {
+                            color: $color2;
+                            font-size: 15px;
+                        }
+                        .counterplusminus {
+                            display: flex;
+                            justify-content: space-between;
+                            .form-control {
+                                border-radius: 0;
+                                border: 1px solid rgba($color: #000000, $alpha: 0.1);
+                                padding: 0.5rem 1rem;
+                                outline: none;
+                                margin-right: 5px;
+                            }
+                            .btn {
+                                border-radius: 0;
+                                border: 1px solid rgba($color: #000000, $alpha: 0.1);
+                                padding: 0.5rem 1rem;
+                                outline: none;
+                                background: none;
+                                margin: 0 2px;
+                            }
+                        }
+                        .buttonoutr {
+                        }
                     }
                 }
             }
