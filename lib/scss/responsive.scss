@@ -38,6 +38,19 @@
             }
         }
     }
+
+    .prductdetailsPopup {
+        .addtocartplusminus {
+            input[type="text"] {
+                max-width: 50px;
+            }
+
+            .btn-outline {
+                min-width: auto;
+            }
+        }
+    }
+
 }
 
 @media only screen and (max-width: 992px) {
@@ -277,6 +290,104 @@
     .products {
         margin-bottom: 15px;
     }
+
+    .product-details {
+        .productview.product-list {
+            .product-outr {
+                .pro-inr-details {
+                    float: none;
+                    width: 100%;
+                    text-align: center;
+
+                    .buttonoutr .btn {
+                        width: 100%;
+                        margin: 0 0 30px;
+                    }
+
+                    .term {
+                        margin-bottom: 1rem;
+                    }
+                }
+
+                .watch-outr {
+                    float: none;
+                    width: 100%;
+                }
+
+                .listzoomthumb {
+                    display: none;
+                }
+
+
+            }
+
+
+        }
+    }
+
+    #sidebar {
+        float: none;
+        width: 100%;
+    }
+
+    .tabcontainer {
+        padding-top: 0;
+
+        .r-tabs-panel {
+            .left-right-content {
+                p {
+                    overflow: auto;
+                }
+
+                .right-image {
+                    float: none;
+                    margin: 0 0 20px 0;
+                }
+
+                .left-image {
+                    float: none;
+                    margin: 0 0 20px 0;
+                }
+            }
+        }
+    }
+
+    .r-tabs-accordion-title {
+        padding: 0.5rem;
+        position: relative;
+        border-top: 1px solid rgba($color: #000000, $alpha: 0.5);
+
+        &:before {
+            content: '+';
+            position: absolute;
+            right: 15px;
+            top: 7px;
+        }
+
+        .r-tabs-anchor {
+            color: $color1;
+            font-size: 13px;
+            display: block;
+            text-decoration: none;
+        }
+
+        &.r-tabs-state-active {
+            &:before {
+                content: '-';
+                position: absolute;
+                right: 15px;
+                top: 7px;
+            }
+        }
+
+    }
+
+
+
+
+
+
+
 }
 
 @media only screen and (max-device-width : 768px) {
