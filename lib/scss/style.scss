@@ -14,14 +14,10 @@ img {
     vertical-align: middle;
 }
 
-
-
 @media (min-width: 1200px) {
     .container-fluid {
         max-width: 1560px;
     }
-
-
 }
 
 a {
@@ -288,6 +284,12 @@ a {
             }
         }
     }
+
+    #quickviewmodal {
+        .modal-lg {
+            max-width: 1200px;
+        }
+    }
 }
 
 .featuredPro {
@@ -484,7 +486,8 @@ a {
 
 .main {
     background-color: white;
-    z-index: 9;
+    position: relative;
+    z-index: 0;
 }
 
 .footer {
@@ -2292,6 +2295,81 @@ div#exampleModal {
         .btn-outline {
             border: $color2 1px solid;
             color: $color2;
+        }
+    }
+}
+
+.hide {
+    display: none;
+}
+
+#quickviewmodal {
+    .modal-content {
+        border-radius: 0;
+
+        .modal-header {
+            border: none;
+        }
+    }
+
+    .modal-body {
+        .product-details {
+            .productview.product-list {
+                .product-outr {
+                    .watch-outr {
+                        float: left;
+                        width: 79%;
+                    }
+
+                    .pro-inr-details {
+                        padding-left: 15px;
+                    }
+
+                    .payment {
+                        li {
+                            a {
+                                color: $color2;
+                                text-decoration: none;
+
+                                .icon-apple,
+                                .icon-g-pay,
+                                .icon-amazon-pay {
+                                    font-size: 1rem;
+                                }
+                            }
+                        }
+                    }
+
+                    .social-media {
+                        ul {
+                            padding: 0;
+                            margin: 0;
+                            display: flex;
+                            justify-content: space-evenly;
+
+                            li {
+                                @extend .display-inline-block;
+                                padding: 0.5rem;
+
+                                a {
+                                    text-decoration: none;
+                                    display: block;
+
+                                    em,
+                                    span {
+                                        color: $color2;
+                                        font-size: 1.2rem;
+
+                                        &:before {
+                                            color: $color2;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

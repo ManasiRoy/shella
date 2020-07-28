@@ -410,11 +410,16 @@
 
 }
 
-@media only screen and (max-device-width : 768px) {
+@media only screen and (max-width : 768px) {
     .hrd-main {
         button.navbar-toggler {
             left: 20px;
         }
+    }
+
+    #quickviewmodal .modal-body .product-details .productview.product-list .product-outr .watch-outr {
+        float: none;
+        width: 100%;
     }
 }
 

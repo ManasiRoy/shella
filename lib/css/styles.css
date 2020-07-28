@@ -9,7 +9,7 @@ img {
   max-width: 100%; }
 
 .display-inline-block, .hrd-main .upHdr ul li, .hrd-main .upHdr ul li a, .hrd-main .upHdr ul li a em, .hrd-main .upHdr ul li .dropdown button.dropdown-toggle, .hrd-main .upHdr ul li .dropdown button.dropdown-toggle:after, .footer ul li span,
-.footer ul li a, .footer ul.payment li, .product-outr .sizeoutr ul li, .product-outr .quick-view span, .gridview ul li, .bannerSlider.owl-carousel .owl-dots .owl-dot, .filter-popup .brands input[type="checkbox"], .login-outr .brands input[type="checkbox"], .bag-popup .brands input[type="checkbox"], .breadcamp li, .breadcamp li a, .bag-popup h2 a, .bag-popup .bag-inr a.freeshipping span, .tag, .responsiveTab ul.r-tabs-nav li a, .product-details .productview.product-list .product-outr .pro-inr-details .order span.icon-shipping, .product-details .productview.product-list .product-outr .pro-inr-details .order p span, .product-details .productview.product-list .product-outr .pro-inr-details .realcounter .countdown, .product-details .productview.product-list .product-outr .pro-inr-details .link a, .product-details .productview.product-list .product-outr .pro-inr-details .buttonoutr .btn span, .product-details .productview.product-list .product-outr .pro-inr-details .gurantee .payment li, .product-details .productview.product-list .product-outr .pro-inr-details span.green-bg, .zoombtn, .prductdetailsPopup .coloroutr ul li {
+.footer ul li a, .footer ul.payment li, .product-outr .sizeoutr ul li, .product-outr .quick-view span, .gridview ul li, .bannerSlider.owl-carousel .owl-dots .owl-dot, .filter-popup .brands input[type="checkbox"], .login-outr .brands input[type="checkbox"], .bag-popup .brands input[type="checkbox"], .breadcamp li, .breadcamp li a, .bag-popup h2 a, .bag-popup .bag-inr a.freeshipping span, .tag, .responsiveTab ul.r-tabs-nav li a, .product-details .productview.product-list .product-outr .pro-inr-details .order span.icon-shipping, .product-details .productview.product-list .product-outr .pro-inr-details .order p span, .product-details .productview.product-list .product-outr .pro-inr-details .realcounter .countdown, .product-details .productview.product-list .product-outr .pro-inr-details .link a, .product-details .productview.product-list .product-outr .pro-inr-details .buttonoutr .btn span, .product-details .productview.product-list .product-outr .pro-inr-details .gurantee .payment li, .product-details .productview.product-list .product-outr .pro-inr-details span.green-bg, .zoombtn, .prductdetailsPopup .coloroutr ul li, #quickviewmodal .modal-body .product-details .productview.product-list .product-outr .social-media ul li {
   display: inline-block;
   vertical-align: middle; }
 
@@ -178,7 +178,10 @@ a {
           .navbar-menu li.megamenu:hover .main-ul li:hover a:hover {
             background: none; }
           .navbar-menu li.megamenu:hover .main-ul li ul li:hover a:hover {
-            background-color: rgba(0, 0, 0, 0.1); } }
+            background-color: rgba(0, 0, 0, 0.1); }
+
+  #quickviewmodal .modal-lg {
+    max-width: 1200px; } }
 .featuredPro h6 {
   font-size: 13px;
   color: #858585; }
@@ -309,7 +312,8 @@ a {
 
 .main {
   background-color: white;
-  z-index: 9; }
+  position: relative;
+  z-index: 0; }
 
 .footer {
   background: #141414;
@@ -1435,6 +1439,43 @@ div#exampleModal {
       border: #141414 1px solid;
       color: #141414; }
 
+.hide {
+  display: none; }
+
+#quickviewmodal .modal-content {
+  border-radius: 0; }
+  #quickviewmodal .modal-content .modal-header {
+    border: none; }
+#quickviewmodal .modal-body .product-details .productview.product-list .product-outr .watch-outr {
+  float: left;
+  width: 79%; }
+#quickviewmodal .modal-body .product-details .productview.product-list .product-outr .pro-inr-details {
+  padding-left: 15px; }
+#quickviewmodal .modal-body .product-details .productview.product-list .product-outr .payment li a {
+  color: #141414;
+  text-decoration: none; }
+  #quickviewmodal .modal-body .product-details .productview.product-list .product-outr .payment li a .icon-apple,
+  #quickviewmodal .modal-body .product-details .productview.product-list .product-outr .payment li a .icon-g-pay,
+  #quickviewmodal .modal-body .product-details .productview.product-list .product-outr .payment li a .icon-amazon-pay {
+    font-size: 1rem; }
+#quickviewmodal .modal-body .product-details .productview.product-list .product-outr .social-media ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly; }
+  #quickviewmodal .modal-body .product-details .productview.product-list .product-outr .social-media ul li {
+    padding: 0.5rem; }
+    #quickviewmodal .modal-body .product-details .productview.product-list .product-outr .social-media ul li a {
+      text-decoration: none;
+      display: block; }
+      #quickviewmodal .modal-body .product-details .productview.product-list .product-outr .social-media ul li a em,
+      #quickviewmodal .modal-body .product-details .productview.product-list .product-outr .social-media ul li a span {
+        color: #141414;
+        font-size: 1.2rem; }
+        #quickviewmodal .modal-body .product-details .productview.product-list .product-outr .social-media ul li a em:before,
+        #quickviewmodal .modal-body .product-details .productview.product-list .product-outr .social-media ul li a span:before {
+          color: #141414; }
+
 @media (min-width: 1570px) {
   .navbar-menu li.megamenu:hover .main-ul {
     max-width: 1560px; }
@@ -1662,9 +1703,13 @@ div#exampleModal {
       position: absolute;
       right: 15px;
       top: 7px; } }
-@media only screen and (max-device-width: 768px) {
+@media only screen and (max-width: 768px) {
   .hrd-main button.navbar-toggler {
-    left: 20px; } }
+    left: 20px; }
+
+  #quickviewmodal .modal-body .product-details .productview.product-list .product-outr .watch-outr {
+    float: none;
+    width: 100%; } }
 @media only screen and (max-width: 767px) {
   .hrd-main .upHdr button.navbar-toggler {
     top: -19px; }

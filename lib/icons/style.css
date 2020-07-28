@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'stella';
-  src:  url('fonts/stella.eot?ryl5i1');
-  src:  url('fonts/stella.eot?ryl5i1#iefix') format('embedded-opentype'),
-    url('fonts/stella.ttf?ryl5i1') format('truetype'),
-    url('fonts/stella.woff?ryl5i1') format('woff'),
-    url('fonts/stella.svg?ryl5i1#stella') format('svg');
+  src:  url('fonts/stella.eot?t4ot9p');
+  src:  url('fonts/stella.eot?t4ot9p#iefix') format('embedded-opentype'),
+    url('fonts/stella.ttf?t4ot9p') format('truetype'),
+    url('fonts/stella.woff?t4ot9p') format('woff'),
+    url('fonts/stella.svg?t4ot9p#stella') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,57 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-reddit:before {
+  content: "\e981";
+}
+.icon-buffer:before {
+  content: "\e982";
+}
+.icon-amazon-pay .path1:before {
+  content: "\e977";
+  color: rgb(20, 20, 20);
+}
+.icon-amazon-pay .path2:before {
+  content: "\e978";
+  margin-left: -2.77734375em;
+  color: rgb(20, 20, 20);
+}
+.icon-amazon-pay .path3:before {
+  content: "\e979";
+  margin-left: -2.77734375em;
+  color: rgb(20, 20, 20);
+}
+.icon-amazon-pay .path4:before {
+  content: "\e97a";
+  margin-left: -2.77734375em;
+  color: rgb(20, 20, 20);
+}
+.icon-amazon-pay .path5:before {
+  content: "\e97b";
+  margin-left: -2.77734375em;
+  color: rgb(20, 20, 20);
+}
+.icon-amazon-pay .path6:before {
+  content: "\e97c";
+  margin-left: -2.77734375em;
+  color: rgb(20, 20, 20);
+}
+.icon-amazon-pay .path7:before {
+  content: "\e97d";
+  margin-left: -2.77734375em;
+  color: rgb(20, 20, 20);
+}
+.icon-amazon-pay .path8:before {
+  content: "\e97e";
+  margin-left: -2.77734375em;
+  color: rgb(133, 133, 133);
+}
+.icon-apple:before {
+  content: "\e97f";
+}
+.icon-g-pay:before {
+  content: "\e980";
+}
 .icon-video:before {
   content: "\e975";
 }
