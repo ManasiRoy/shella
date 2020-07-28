@@ -164,11 +164,14 @@ a {
             display: block;
             position: static;
             min-width: inherit; }
+            .navbar-menu li.megamenu:hover .main-ul li ul.col-lg-6 {
+              padding-left: 15px; }
             .navbar-menu li.megamenu:hover .main-ul li ul li a {
               font-size: 13px;
               text-transform: inherit;
               color: #858585;
-              cursor: pointer; }
+              cursor: pointer;
+              padding-left: 0; }
           .navbar-menu li.megamenu:hover .main-ul li:hover a:hover {
             background: none; }
           .navbar-menu li.megamenu:hover .main-ul li ul li:hover a:hover {
@@ -1167,7 +1170,7 @@ body.fixed {
       .product-details .productview.product-list .product-outr .watch-outr .owl-carousel .owl-nav button.owl-prev {
         left: 15px; }
         .product-details .productview.product-list .product-outr .watch-outr .owl-carousel .owl-nav button.owl-prev.disabled {
-          opacity: .8; }
+          opacity: 0.8; }
       .product-details .productview.product-list .product-outr .watch-outr .owl-carousel .owl-nav button.owl-next {
         right: 15px; }
 .product-details .productview.product-list .product-outr .pro-inr-details {
@@ -1282,7 +1285,7 @@ body.fixed {
         font-size: 1.6rem;
         padding: 5px; }
   .product-details .productview.product-list .product-outr .pro-inr-details span.green-bg {
-    background-color: #25A799;
+    background-color: #25a799;
     color: white;
     padding: 0.5rem;
     line-height: 1;
