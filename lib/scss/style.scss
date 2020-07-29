@@ -1029,6 +1029,12 @@ a {
 .filter-popup {
     position: relative;
 
+    .bg-grey {
+        background-color: rgba($color: #000000, $alpha: 0.1);
+        margin-bottom: 15px;
+        padding: 1rem;
+    }
+
     h2 {
         font-size: 15px;
         color: rgba(0, 0, 0, 0.2);
@@ -1050,96 +1056,124 @@ a {
         }
     }
 
-    .brands {
-        border-top: 1px solid rgba(0, 0, 0, 0.1);
-        padding: 1rem 0;
+    .dropdown {
+        .btn {
+            background: none;
+            width: 100%;
+            outline: none;
+            text-align: left;
+            font-size: 15px;
+            text-transform: uppercase;
+            color: $color2;
+            padding: 0;
 
-        .dropdown {
-            .btn {
-                background: none;
-                width: 100%;
+            &:focus {
                 outline: none;
-                text-align: left;
-                font-size: 15px;
-                text-transform: uppercase;
-                color: $color2;
+                border: none;
+                box-shadow: none;
+            }
+        }
+
+        .dropdown-toggle:after {
+            content: "\e943";
+            font-family: "stella";
+            border: none;
+            font-size: 1rem;
+            vertical-align: middle;
+            line-height: 0;
+            margin: -16px 0 0 15px;
+            transform: rotate(90deg);
+            position: absolute;
+            right: 15px;
+            top: 18px;
+        }
+
+        .dropdown-menu {
+            position: relative !important;
+            right: auto !important;
+            transform: inherit !important;
+            border-radius: 0;
+            padding: 0.5rem 0;
+            border: none;
+            width: 100%;
+            background: transparent;
+
+            ul {
                 padding: 0;
-
-                &:focus {
-                    outline: none;
-                    border: none;
-                    box-shadow: none;
-                }
-            }
-
-            .dropdown-toggle:after {
-                content: "\e943";
-                font-family: "stella";
-                border: none;
-                font-size: 1rem;
-                vertical-align: middle;
-                line-height: 0;
-                margin: -16px 0 0 15px;
-                transform: rotate(90deg);
-            }
-
-            .dropdown-menu {
-                position: relative !important;
-                right: auto !important;
-                transform: inherit !important;
-                border-radius: 0;
-                padding: 0.5rem;
-                border: none;
+                margin: 0;
                 width: 100%;
 
-                ul {
-                    padding: 0;
-                    margin: 0;
-                    width: 100%;
+                li {
+                    display: block;
+                    font-size: 13px;
+                    color: $color2;
+                    padding: 0.5rem;
+                    border: 1px solid rgba($color: #000000, $alpha: 0.1);
+                    position: relative;
 
-                    li {
-                        display: block;
-                        font-size: 13px;
-                        color: $color2;
-                        padding: 0.5rem 0;
-                        position: relative;
-
-                        .count {
-                            color: $color1;
-                            position: absolute;
-                            right: 15px;
-                        }
+                    .count {
+                        color: $color1;
+                        position: absolute;
+                        right: 15px;
                     }
                 }
             }
 
-            &.show {
-                .dropdown-toggle:after {
-                    content: "\e93b";
-                    font-size: 1rem;
+            .leftalignUl {
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-wrap: wrap;
+                background: white;
+                border: 1px solid rgba($color: #000000, $alpha: 0.1);
+
+                li {
+                    padding: 0.5rem;
+                    width: 33.33%;
+
+                    a {
+                        padding: 0.2rem;
+                        color: $color2;
+                        text-decoration: none;
+                    }
+
+                    &:hover {
+                        background: $color2;
+
+                        a {
+                            color: white;
+                        }
+                    }
                 }
             }
         }
 
-        input[type="checkbox"] {
-            width: 20px;
-            height: 20px;
-            background: #fff;
-            border: 1px solid #ccc;
-            -webkit-appearance: none;
-            padding-right: 15px;
-            @extend .display-inline-block;
-            margin-right: 5px;
-        }
-
-        input[type="checkbox"]:checked {
-            background: url(../images/check.jpg) no-repeat 4px 4px;
-        }
-
-        &.size {
-            border-top: none;
+        &.show {
+            .dropdown-toggle:after {
+                content: "\e93b";
+                font-size: 1rem;
+            }
         }
     }
+
+    input[type="checkbox"] {
+        width: 20px;
+        height: 20px;
+        background: #fff;
+        border: 1px solid #ccc;
+        -webkit-appearance: none;
+        padding-right: 15px;
+        @extend .display-inline-block;
+        margin-right: 5px;
+    }
+
+    input[type="checkbox"]:checked {
+        background: url(../images/check.jpg) no-repeat 4px 4px;
+    }
+
+    // &.size {
+    //     border-top: none;
+    // }
 
     .color {
         .dropdown {
@@ -1215,6 +1249,16 @@ a {
     &:-webkit-scrollbar {
         width: 5px;
     }
+
+    .brands {
+        .dropdown .dropdown-menu .leftalignUl li {
+            &:hover {
+                color: white;
+            }
+
+            width: 100%;
+        }
+    }
 }
 
 .range-slider {
@@ -1232,7 +1276,7 @@ a {
     }
 }
 
-.filter-popup {
+.common-popup {
     padding: 10px 15px;
     background: white;
     position: fixed;
@@ -1247,6 +1291,11 @@ a {
     -webkit-transition: all 0.5s ease-out;
     -ms-transition: all 0.5s ease-out;
     overflow-y: auto;
+}
+
+.filter-popup {
+    background: white;
+    height: 100vh;
 }
 
 .overlay {
@@ -1383,7 +1432,7 @@ body.fixed {
 }
 
 .login-outr {
-    @extend .filter-popup;
+    @extend .common-popup;
 
     /* Let's get this party started */
     &::-webkit-scrollbar {
@@ -1509,7 +1558,7 @@ body.fixed {
 }
 
 .bag-popup {
-    @extend .filter-popup;
+    @extend .common-popup;
     transform: translateX(100%);
     right: 0;
     left: auto;
@@ -2369,6 +2418,19 @@ div#exampleModal {
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+.productview {
+    .product-outr {
+        .buttonoutr {
+            flex-wrap: wrap;
+
+            .btn-outline {
+                min-width: inherit;
+                margin-bottom: 0.5rem;
             }
         }
     }

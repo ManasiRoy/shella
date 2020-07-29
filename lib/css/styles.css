@@ -9,7 +9,7 @@ img {
   max-width: 100%; }
 
 .display-inline-block, .hrd-main .upHdr ul li, .hrd-main .upHdr ul li a, .hrd-main .upHdr ul li a em, .hrd-main .upHdr ul li .dropdown button.dropdown-toggle, .hrd-main .upHdr ul li .dropdown button.dropdown-toggle:after, .footer ul li span,
-.footer ul li a, .footer ul.payment li, .product-outr .sizeoutr ul li, .product-outr .quick-view span, .gridview ul li, .bannerSlider.owl-carousel .owl-dots .owl-dot, .filter-popup .brands input[type="checkbox"], .login-outr .brands input[type="checkbox"], .bag-popup .brands input[type="checkbox"], .breadcamp li, .breadcamp li a, .bag-popup h2 a, .bag-popup .bag-inr a.freeshipping span, .tag, .responsiveTab ul.r-tabs-nav li a, .product-details .productview.product-list .product-outr .pro-inr-details .order span.icon-shipping, .product-details .productview.product-list .product-outr .pro-inr-details .order p span, .product-details .productview.product-list .product-outr .pro-inr-details .realcounter .countdown, .product-details .productview.product-list .product-outr .pro-inr-details .link a, .product-details .productview.product-list .product-outr .pro-inr-details .buttonoutr .btn span, .product-details .productview.product-list .product-outr .pro-inr-details .gurantee .payment li, .product-details .productview.product-list .product-outr .pro-inr-details span.green-bg, .zoombtn, .prductdetailsPopup .coloroutr ul li, #quickviewmodal .modal-body .product-details .productview.product-list .product-outr .social-media ul li {
+.footer ul li a, .footer ul.payment li, .product-outr .sizeoutr ul li, .product-outr .quick-view span, .gridview ul li, .bannerSlider.owl-carousel .owl-dots .owl-dot, .filter-popup input[type="checkbox"], .breadcamp li, .breadcamp li a, .bag-popup h2 a, .bag-popup .bag-inr a.freeshipping span, .tag, .responsiveTab ul.r-tabs-nav li a, .product-details .productview.product-list .product-outr .pro-inr-details .order span.icon-shipping, .product-details .productview.product-list .product-outr .pro-inr-details .order p span, .product-details .productview.product-list .product-outr .pro-inr-details .realcounter .countdown, .product-details .productview.product-list .product-outr .pro-inr-details .link a, .product-details .productview.product-list .product-outr .pro-inr-details .buttonoutr .btn span, .product-details .productview.product-list .product-outr .pro-inr-details .gurantee .payment li, .product-details .productview.product-list .product-outr .pro-inr-details span.green-bg, .zoombtn, .prductdetailsPopup .coloroutr ul li, #quickviewmodal .modal-body .product-details .productview.product-list .product-outr .social-media ul li {
   display: inline-block;
   vertical-align: middle; }
 
@@ -646,120 +646,146 @@ a {
 .productview .pro-inr-details h4 {
   min-height: 50px; }
 
-.filter-popup, .login-outr, .bag-popup {
+.filter-popup {
   position: relative; }
-  .filter-popup h2, .login-outr h2, .bag-popup h2 {
+  .filter-popup .bg-grey {
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    padding: 1rem; }
+  .filter-popup h2 {
     font-size: 15px;
     color: rgba(0, 0, 0, 0.2);
     margin-bottom: 1rem;
     text-transform: uppercase; }
-    .filter-popup h2 a, .login-outr h2 a, .bag-popup h2 a {
+    .filter-popup h2 a {
       font-size: 15px;
       color: #141414;
       text-decoration: none; }
-  .filter-popup .size .col-6, .login-outr .size .col-6, .bag-popup .size .col-6 {
+  .filter-popup .size .col-6 {
     width: 50%;
     float: left;
     min-width: 100px; }
-  .filter-popup .brands, .login-outr .brands, .bag-popup .brands {
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 1rem 0; }
-    .filter-popup .brands .dropdown .btn, .login-outr .brands .dropdown .btn, .bag-popup .brands .dropdown .btn {
-      background: none;
-      width: 100%;
+  .filter-popup .dropdown .btn {
+    background: none;
+    width: 100%;
+    outline: none;
+    text-align: left;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #141414;
+    padding: 0; }
+    .filter-popup .dropdown .btn:focus {
       outline: none;
-      text-align: left;
-      font-size: 15px;
-      text-transform: uppercase;
-      color: #141414;
-      padding: 0; }
-      .filter-popup .brands .dropdown .btn:focus, .login-outr .brands .dropdown .btn:focus, .bag-popup .brands .dropdown .btn:focus {
-        outline: none;
-        border: none;
-        box-shadow: none; }
-    .filter-popup .brands .dropdown .dropdown-toggle:after, .login-outr .brands .dropdown .dropdown-toggle:after, .bag-popup .brands .dropdown .dropdown-toggle:after {
-      content: "\e943";
-      font-family: "stella";
       border: none;
-      font-size: 1rem;
-      vertical-align: middle;
-      line-height: 0;
-      margin: -16px 0 0 15px;
-      transform: rotate(90deg); }
-    .filter-popup .brands .dropdown .dropdown-menu, .login-outr .brands .dropdown .dropdown-menu, .bag-popup .brands .dropdown .dropdown-menu {
-      position: relative !important;
-      right: auto !important;
-      transform: inherit !important;
-      border-radius: 0;
-      padding: 0.5rem;
-      border: none;
+      box-shadow: none; }
+  .filter-popup .dropdown .dropdown-toggle:after {
+    content: "\e943";
+    font-family: "stella";
+    border: none;
+    font-size: 1rem;
+    vertical-align: middle;
+    line-height: 0;
+    margin: -16px 0 0 15px;
+    transform: rotate(90deg);
+    position: absolute;
+    right: 15px;
+    top: 18px; }
+  .filter-popup .dropdown .dropdown-menu {
+    position: relative !important;
+    right: auto !important;
+    transform: inherit !important;
+    border-radius: 0;
+    padding: 0.5rem 0;
+    border: none;
+    width: 100%;
+    background: transparent; }
+    .filter-popup .dropdown .dropdown-menu ul {
+      padding: 0;
+      margin: 0;
       width: 100%; }
-      .filter-popup .brands .dropdown .dropdown-menu ul, .login-outr .brands .dropdown .dropdown-menu ul, .bag-popup .brands .dropdown .dropdown-menu ul {
-        padding: 0;
-        margin: 0;
-        width: 100%; }
-        .filter-popup .brands .dropdown .dropdown-menu ul li, .login-outr .brands .dropdown .dropdown-menu ul li, .bag-popup .brands .dropdown .dropdown-menu ul li {
-          display: block;
-          font-size: 13px;
+      .filter-popup .dropdown .dropdown-menu ul li {
+        display: block;
+        font-size: 13px;
+        color: #141414;
+        padding: 0.5rem;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        position: relative; }
+        .filter-popup .dropdown .dropdown-menu ul li .count {
+          color: #858585;
+          position: absolute;
+          right: 15px; }
+    .filter-popup .dropdown .dropdown-menu .leftalignUl {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      background: white;
+      border: 1px solid rgba(0, 0, 0, 0.1); }
+      .filter-popup .dropdown .dropdown-menu .leftalignUl li {
+        padding: 0.5rem;
+        width: 33.33%; }
+        .filter-popup .dropdown .dropdown-menu .leftalignUl li a {
+          padding: 0.2rem;
           color: #141414;
-          padding: 0.5rem 0;
-          position: relative; }
-          .filter-popup .brands .dropdown .dropdown-menu ul li .count, .login-outr .brands .dropdown .dropdown-menu ul li .count, .bag-popup .brands .dropdown .dropdown-menu ul li .count {
-            color: #858585;
-            position: absolute;
-            right: 15px; }
-    .filter-popup .brands .dropdown.show .dropdown-toggle:after, .login-outr .brands .dropdown.show .dropdown-toggle:after, .bag-popup .brands .dropdown.show .dropdown-toggle:after {
-      content: "\e93b";
-      font-size: 1rem; }
-    .filter-popup .brands input[type="checkbox"], .login-outr .brands input[type="checkbox"], .bag-popup .brands input[type="checkbox"] {
-      width: 20px;
-      height: 20px;
-      background: #fff;
-      border: 1px solid #ccc;
-      -webkit-appearance: none;
-      padding-right: 15px;
-      margin-right: 5px; }
-    .filter-popup .brands input[type="checkbox"]:checked, .login-outr .brands input[type="checkbox"]:checked, .bag-popup .brands input[type="checkbox"]:checked {
-      background: url(../images/check.jpg) no-repeat 4px 4px; }
-    .filter-popup .brands.size, .login-outr .brands.size, .bag-popup .brands.size {
-      border-top: none; }
-  .filter-popup .color .dropdown .dropdown-menu ul li, .login-outr .color .dropdown .dropdown-menu ul li, .bag-popup .color .dropdown .dropdown-menu ul li {
+          text-decoration: none; }
+        .filter-popup .dropdown .dropdown-menu .leftalignUl li:hover {
+          background: #141414; }
+          .filter-popup .dropdown .dropdown-menu .leftalignUl li:hover a {
+            color: white; }
+  .filter-popup .dropdown.show .dropdown-toggle:after {
+    content: "\e93b";
+    font-size: 1rem; }
+  .filter-popup input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    -webkit-appearance: none;
+    padding-right: 15px;
+    margin-right: 5px; }
+  .filter-popup input[type="checkbox"]:checked {
+    background: url(../images/check.jpg) no-repeat 4px 4px; }
+  .filter-popup .color .dropdown .dropdown-menu ul li {
     width: 20px;
     height: 20px;
     border-radius: 100%;
     display: inline-block !important;
     margin: 0 5px; }
-    .filter-popup .color .dropdown .dropdown-menu ul li.red, .login-outr .color .dropdown .dropdown-menu ul li.red, .bag-popup .color .dropdown .dropdown-menu ul li.red {
+    .filter-popup .color .dropdown .dropdown-menu ul li.red {
       background-color: #ff0000; }
-    .filter-popup .color .dropdown .dropdown-menu ul li.orange, .login-outr .color .dropdown .dropdown-menu ul li.orange, .bag-popup .color .dropdown .dropdown-menu ul li.orange {
+    .filter-popup .color .dropdown .dropdown-menu ul li.orange {
       background-color: #ffa500; }
-    .filter-popup .color .dropdown .dropdown-menu ul li.yellow, .login-outr .color .dropdown .dropdown-menu ul li.yellow, .bag-popup .color .dropdown .dropdown-menu ul li.yellow {
+    .filter-popup .color .dropdown .dropdown-menu ul li.yellow {
       background-color: #ffff00; }
-    .filter-popup .color .dropdown .dropdown-menu ul li.green, .login-outr .color .dropdown .dropdown-menu ul li.green, .bag-popup .color .dropdown .dropdown-menu ul li.green {
+    .filter-popup .color .dropdown .dropdown-menu ul li.green {
       background-color: #008000; }
-    .filter-popup .color .dropdown .dropdown-menu ul li.black, .login-outr .color .dropdown .dropdown-menu ul li.black, .bag-popup .color .dropdown .dropdown-menu ul li.black {
+    .filter-popup .color .dropdown .dropdown-menu ul li.black {
       background-color: #000000; }
-    .filter-popup .color .dropdown .dropdown-menu ul li.grey, .login-outr .color .dropdown .dropdown-menu ul li.grey, .bag-popup .color .dropdown .dropdown-menu ul li.grey {
+    .filter-popup .color .dropdown .dropdown-menu ul li.grey {
       background-color: #c0c0c0; }
-    .filter-popup .color .dropdown .dropdown-menu ul li.blue, .login-outr .color .dropdown .dropdown-menu ul li.blue, .bag-popup .color .dropdown .dropdown-menu ul li.blue {
+    .filter-popup .color .dropdown .dropdown-menu ul li.blue {
       background-color: #0000ff; }
-    .filter-popup .color .dropdown .dropdown-menu ul li.ash, .login-outr .color .dropdown .dropdown-menu ul li.ash, .bag-popup .color .dropdown .dropdown-menu ul li.ash {
+    .filter-popup .color .dropdown .dropdown-menu ul li.ash {
       background-color: #808080; }
-    .filter-popup .color .dropdown .dropdown-menu ul li.white, .login-outr .color .dropdown .dropdown-menu ul li.white, .bag-popup .color .dropdown .dropdown-menu ul li.white {
+    .filter-popup .color .dropdown .dropdown-menu ul li.white {
       background-color: white;
       box-shadow: #000 0 0 1px; }
-    .filter-popup .color .dropdown .dropdown-menu ul li.darkpink, .login-outr .color .dropdown .dropdown-menu ul li.darkpink, .bag-popup .color .dropdown .dropdown-menu ul li.darkpink {
+    .filter-popup .color .dropdown .dropdown-menu ul li.darkpink {
       background-color: #ee82ee; }
-    .filter-popup .color .dropdown .dropdown-menu ul li.lightping, .login-outr .color .dropdown .dropdown-menu ul li.lightping, .bag-popup .color .dropdown .dropdown-menu ul li.lightping {
+    .filter-popup .color .dropdown .dropdown-menu ul li.lightping {
       background-color: #ffc0cb; }
-  .filter-popup .iconshipOutr, .login-outr .iconshipOutr, .bag-popup .iconshipOutr {
+  .filter-popup .iconshipOutr {
     display: block;
     overflow: hidden;
     margin: 0 0 1rem; }
-  .filter-popup .featuredPro, .login-outr .featuredPro, .bag-popup .featuredPro {
+  .filter-popup .featuredPro {
     display: block; }
-  .filter-popup:-webkit-scrollbar, .login-outr:-webkit-scrollbar, .bag-popup:-webkit-scrollbar {
+  .filter-popup:-webkit-scrollbar {
     width: 5px; }
+  .filter-popup .brands .dropdown .dropdown-menu .leftalignUl li {
+    width: 100%; }
+    .filter-popup .brands .dropdown .dropdown-menu .leftalignUl li:hover {
+      color: white; }
 
 .range-slider {
   padding: 1rem 0; }
@@ -771,7 +797,7 @@ a {
   .range-slider .leftspace {
     margin-left: -20px; }
 
-.filter-popup, .login-outr, .bag-popup {
+.common-popup, .login-outr, .bag-popup {
   padding: 10px 15px;
   background: white;
   position: fixed;
@@ -786,6 +812,10 @@ a {
   -webkit-transition: all 0.5s ease-out;
   -ms-transition: all 0.5s ease-out;
   overflow-y: auto; }
+
+.filter-popup {
+  background: white;
+  height: 100vh; }
 
 .overlay {
   background: rgba(0, 0, 0, 0.8);
@@ -1476,6 +1506,12 @@ div#exampleModal {
         #quickviewmodal .modal-body .product-details .productview.product-list .product-outr .social-media ul li a span:before {
           color: #141414; }
 
+.productview .product-outr .buttonoutr {
+  flex-wrap: wrap; }
+  .productview .product-outr .buttonoutr .btn-outline {
+    min-width: inherit;
+    margin-bottom: 0.5rem; }
+
 @media (min-width: 1570px) {
   .navbar-menu li.megamenu:hover .main-ul {
     max-width: 1560px; }
@@ -1486,10 +1522,10 @@ div#exampleModal {
       left: 0;
       right: 0;
       margin: auto;
-      top: 35px;
+      top: 74px;
       z-index: -1;
       width: 100%;
-      height: 50%;
+      height: 36%;
       bottom: auto; } }
 @media only screen and (max-width: 1400px) {
   .bannerSlider.owl-carousel .item .video-responsive video {
@@ -1702,7 +1738,22 @@ div#exampleModal {
       content: '-';
       position: absolute;
       right: 15px;
-      top: 7px; } }
+      top: 7px; }
+
+  .filter-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: auto;
+    width: 300px;
+    z-index: 9999;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    overflow-y: auto;
+    padding: 0.5rem 1rem; } }
 @media only screen and (max-width: 768px) {
   .hrd-main button.navbar-toggler {
     left: 20px; }
@@ -1755,7 +1806,10 @@ div#exampleModal {
     .proBanner img {
       width: 100%;
       height: 100%;
-      object-fit: cover; } }
+      object-fit: cover; }
+
+  .tabcontainer {
+    margin-bottom: 25px; } }
 @media only screen and (min-device-width: 375px) and (max-device-width: 736px) and (orientation: landscape) {
   .hrd-main button.navbar-toggler {
     left: 14%; } }
