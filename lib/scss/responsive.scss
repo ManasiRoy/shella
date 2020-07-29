@@ -3,7 +3,7 @@
         max-width: 1560px;
 
         &:before {
-            content: '';
+            content: "";
             position: fixed;
             background-color: white;
             left: 0;
@@ -28,7 +28,6 @@
             }
         }
     }
-
 }
 
 @media only screen and (max-width: 1024px) {
@@ -70,7 +69,6 @@
             }
         }
     }
-
 }
 
 @media only screen and (max-width: 992px) {
@@ -102,7 +100,6 @@
             padding: 0 0.5rem 1.5rem;
 
             li {
-
                 display: inline-block;
                 vertical-align: middle;
 
@@ -144,7 +141,7 @@
                     right: 15px;
                     left: auto;
                     position: absolute;
-                    content: '+';
+                    content: "+";
                     border: none;
                 }
             }
@@ -152,7 +149,7 @@
             &.show {
                 .dropdown-toggle:after {
                     border: none;
-                    content: '-';
+                    content: "-";
                 }
             }
         }
@@ -172,7 +169,6 @@
             transform: inherit !important;
             margin-top: 15px;
             margin-bottom: 15px;
-
         }
     }
 
@@ -239,8 +235,6 @@
             position: static;
             background: transparent;
         }
-
-
     }
 
     .main {
@@ -250,7 +244,6 @@
     .featuredPro {
         display: block;
     }
-
 
     .bannerSlider.owl-carousel {
         .item {
@@ -287,12 +280,9 @@
             .product-outr {
                 padding: 0 10%;
 
-
-
                 .watch-outr {
                     float: none;
                     width: 100%;
-
                 }
 
                 .pro-inr-details {
@@ -337,11 +327,7 @@
                 .listzoomthumb {
                     display: none;
                 }
-
-
             }
-
-
         }
     }
 
@@ -378,7 +364,7 @@
         border-top: 1px solid rgba($color: #000000, $alpha: 0.5);
 
         &:before {
-            content: '+';
+            content: "+";
             position: absolute;
             right: 15px;
             top: 7px;
@@ -393,38 +379,16 @@
 
         &.r-tabs-state-active {
             &:before {
-                content: '-';
+                content: "-";
                 position: absolute;
                 right: 15px;
                 top: 7px;
             }
         }
-
     }
-
-    .filter-popup {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: auto;
-        width: 300px;
-        z-index: 9999;
-        height: 100vh;
-        transform: translateX(-100%);
-        transition: all 0.5s ease-out;
-        -webkit-transition: all 0.5s ease-out;
-        -ms-transition: all 0.5s ease-out;
-        overflow-y: auto;
-        padding: 0.5rem 1rem;
-    }
-
-
-
-
-
 }
 
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width: 768px) {
     .hrd-main {
         button.navbar-toggler {
             left: 20px;
@@ -435,13 +399,25 @@
         float: none;
         width: 100%;
     }
+
+    #carouselExample {
+        .product-outr {
+            .watch-outr {
+                .owl-carousel {
+                    .owl-nav {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 767px) {
     .hrd-main {
         .upHdr {
             button.navbar-toggler {
-                top: -19px
+                top: -19px;
             }
 
             ul {
@@ -464,15 +440,11 @@
                     }
                 }
             }
-
-
         }
 
         .bag {
             display: none;
         }
-
-
     }
 
     .main {
@@ -519,10 +491,9 @@
     .tabcontainer {
         margin-bottom: 25px;
     }
-
 }
 
-@media only screen and (min-device-width : 375px) and (max-device-width : 736px) and (orientation : landscape) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 736px) and (orientation: landscape) {
     .hrd-main {
         button.navbar-toggler {
             left: 14%;
@@ -530,7 +501,7 @@
     }
 }
 
-@media only screen and (max-width : 670px) {
+@media only screen and (max-width: 670px) {
     .hrd-main {
         button.navbar-toggler {
             left: 10%;
@@ -554,7 +525,7 @@
 
         button.navbar-toggler {
             left: 0;
-            top: -25px
+            top: -25px;
         }
     }
 
