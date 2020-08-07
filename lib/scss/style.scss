@@ -164,7 +164,13 @@ a {
                     background: white;
                     padding: 0;
                     box-shadow: rgba(0, 0, 0, 0.2) 0 0 2px;
-
+                    > span {
+                        color: $color2;
+                        padding: 1rem 0;
+                        display: block;
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
                     li {
                         a {
                             color: $color2;
@@ -221,6 +227,10 @@ a {
                                 }
                             }
                         }
+                        ul {
+                            padding-left: 15px;
+                            padding-right: 15px;
+                        }
                     }
                 }
             }
@@ -249,7 +259,13 @@ a {
                                 display: block;
                                 position: static;
                                 min-width: inherit;
-
+                                > span {
+                                    color: $color2;
+                                    padding: 1rem 0;
+                                    display: block;
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                }
                                 &.col-lg-6 {
                                     padding-left: 15px;
                                 }
@@ -298,7 +314,7 @@ a {
         color: $color1;
     }
 
-    figure>img {
+    figure > img {
         width: 100%;
     }
 
@@ -863,7 +879,6 @@ a {
                 }
 
                 &.textblack {
-
                     h2,
                     p {
                         color: $color2;
@@ -1712,7 +1727,6 @@ body.fixed {
                 border-radius: 100%;
                 margin: 0 5px;
 
-
                 &.active {
                     background-color: $color1;
                 }
@@ -2441,6 +2455,5 @@ div#exampleModal {
         }
     }
 }
-
 
 @import "./responsive.scss";

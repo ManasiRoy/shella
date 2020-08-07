@@ -115,6 +115,12 @@ a {
         background: white;
         padding: 0;
         box-shadow: rgba(0, 0, 0, 0.2) 0 0 2px; }
+        .navbar-menu li:hover ul.main-ul > span {
+          color: #141414;
+          padding: 1rem 0;
+          display: block;
+          font-size: 14px;
+          font-weight: 400; }
         .navbar-menu li:hover ul.main-ul li a {
           color: #141414;
           font-size: 13px;
@@ -149,6 +155,9 @@ a {
           z-index: 99; }
           .navbar-menu li:hover ul.main-ul li.submenu-li:hover .submenu a:after {
             display: none; }
+        .navbar-menu li:hover ul.main-ul li ul {
+          padding-left: 15px;
+          padding-right: 15px; }
       .navbar-menu li.megamenu {
         position: static; }
         .navbar-menu li.megamenu:hover .main-ul {
@@ -167,6 +176,12 @@ a {
             display: block;
             position: static;
             min-width: inherit; }
+            .navbar-menu li.megamenu:hover .main-ul li ul > span {
+              color: #141414;
+              padding: 1rem 0;
+              display: block;
+              font-size: 14px;
+              font-weight: 400; }
             .navbar-menu li.megamenu:hover .main-ul li ul.col-lg-6 {
               padding-left: 15px; }
             .navbar-menu li.megamenu:hover .main-ul li ul li a {
@@ -1529,7 +1544,7 @@ div#exampleModal {
       top: 74px;
       z-index: -1;
       width: 100%;
-      height: 45%;
+      height: 60%;
       bottom: auto; } }
 @media only screen and (max-width: 1400px) {
   .bannerSlider.owl-carousel .item .video-responsive video {
@@ -1742,7 +1757,11 @@ div#exampleModal {
       content: "-";
       position: absolute;
       right: 15px;
-      top: 7px; } }
+      top: 7px; }
+
+  .mm-panel ul > span {
+    padding: 1rem 10px;
+    color: #141414; } }
 @media only screen and (max-width: 768px) {
   .hrd-main button.navbar-toggler {
     left: 20px; }
